@@ -1,0 +1,79 @@
+.margem-botao {
+  margin-top: 100px;
+}
+
+.titulo {
+  color: #4f7f7f;
+  margin-bottom: 80px;
+}
+
+.destaque {
+  position: relative;
+  z-index: 3;
+  margin: auto;
+  max-width: 550px;
+  border-radius: 15px;
+  background-color: #4f7f7f;
+  text-align: center;
+  padding: 20px 50px;
+  margin-bottom: -50px;
+}
+
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  margin: 40px auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.destaque h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.destaque h3::after,
+h3::before {
+  padding: 0px;
+}
+
+.parallax {
+  min-height: 400px;
+  background: transparent;
+  width: 100% !important;
+}
+.parallax-mirror {
+  z-index: unset !important;
+  width: 100% !important;
+}
+.parallax-mirror {
+  z-index: unset !important;
+  width: 100% !important;
+}
+.parallax-slider {
+  width: 100%;
+}
+
+.corpo {
+  margin-top: 50px;
+}
+
+.encerramento {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .video-youtube {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-youtube {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+  }
+}
