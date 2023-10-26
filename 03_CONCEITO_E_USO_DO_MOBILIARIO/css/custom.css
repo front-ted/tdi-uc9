@@ -11,6 +11,13 @@
   height: 264px;
 }
 
+.moldura-imgs {
+  /* border: solid 6px brown; */
+  border: 6px inset brown;
+  padding: 10px;
+  background: brown;
+}
+
 .destaque {
   position: relative;
   z-index: 3;
