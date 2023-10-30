@@ -1,0 +1,19 @@
+.corpo {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .video-youtube {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-youtube {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+  }
+}
