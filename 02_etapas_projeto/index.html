@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html
+  lang="pt-br"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+      Noções estruturais básicas
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="../template/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet" />
+    <link href="../template/css/cores.css" rel="stylesheet" />
+    <link href="../template/css/modal-100.css" rel="stylesheet" />
+    <!--Extras - novas classes para facilitar-->
+    <link rel="stylesheet" href="../template/css/extras.css" />
+    <link href="../template/css/sncload.css" rel="stylesheet" />
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <!-- css necessario para o print -->
+    <link
+      href="../template/css/fa/css/font-awesome.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
+    <link
+      href="../template/fonts/roboto.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    onLoad="Javascript:document.getElementById('sncloader').style.display='none';"
+  >
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo" />
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id="sncloader" class="over-loader">
+      <div class="over-cell">
+        <div id="sncload"></div>
+      </div>
+    </div>
+    <header id="topo" class="senac no-print">
+      <div class="header-tecnicos container">
+        <h1 id="nome-curso">Design de interiores</h1>
+        <div id="logo-senac">
+          <img src="../template/images/logo-senac.png" alt="logo do senac" />
+        </div>
+      </div>
+      <div id="sombra"></div>
+    </header>
+    <div id="booklet" class="">
+      <header class="no-print container margem-botao">
+        <!-- BTO IMPRIMIR -->
+        <div class="grupo-imprimir no-print">
+          <button
+            type="button"
+            data-pdf="true"
+            class="bto-imprimir"
+            name="button"
+          >
+            <span class="fa fa-print"></span> <span>Imprimir</span>
+          </button>
+        </div>
+        <!-- /BTO IMPRIMIR -->
+      </header>
+      
+      <!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+      <section class="paginas">
+        <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+        <div class="pagina">
+          <div class="container">
+            <div class="section" id="tit1">
+              <h2>Introdução</h2>
+              <h3>Etapas do projeto: pré-projeto, projeto executivo, especificação, memorial descritivo, <i>mock-up</i>, protótipos, pranchas de apresentação</h3>
+              <p>Neste conhecimento você explorará as etapas de um projeto de produtos. Para começar, é importante saber que um <i>designer</i> de interiores deve ter um conhecimento sólido das etapas de criação no <i>design</i> de produto, isso porque o mundo do <i>design</i> de interiores é um campo vasto, que abrange, em certos projetos, o desenvolvimento de mobiliários. Isso mesmo, é possível que, em algum momento da sua carreira, você projete móveis, não apenas em marcenaria planejada, mas também em mobiliário solto de <i>design</i> assinado. Esta área envolve a concepção e a realização de móveis funcionais, planejados a partir das necessidades dos clientes e que sejam esteticamente harmônicos. </p>
+              <p>Para desempenhar esse papel com excelência, é essencial compreender todas as etapas envolvidas na criação de produtos, as quais diferem em alguns aspectos das etapas de criação de um projeto de interiores. </p>
+            </div>
+            <div class="section" id="tit2">
+              <h2>Gerenciamento de atividades de projeto</h2>
+              <p>De acordo com Baxter (2011), a organização das atividades de projeto é algo complexo. Para o autor, o desenvolvimento de um produto envolve, no mínimo, quatro etapas. </p>
+              <p>A primeira etapa é iniciada no momento em que a ideia do produto é lançada, explorando alguns conceitos para um primeiro teste de mercado. Nessa etapa, segundo o autor, o produto é lançado apenas como um desenho de apresentação para ser mostrado à equipe de projeto ou a um número pequeno de potenciais consumidores ou vendedores. Se for aprovado, deve-se passar para a segunda etapa.               </p>
+              <p>A segunda etapa é a fase de projeto conceitual, na qual são definidas as principais funções e características formais do produto de uma maneira ampla. O conceito selecionado deverá ser submetido a um novo teste de mercado e, se for aprovado, inicia-se a terceira fase, em que haverá uma configuração mais detalhada do produto. Nessa fase, mudanças técnicas, envolvendo materiais e processos de fabricação, são estudadas. Sendo aprovados esses detalhamentos, passa-se aos desenhos para fabricação e desenvolvimento de protótipos. </p>
+              <p>Ainda, segundo Baxter (2011), os projetos de produtos não seguem uma linha reta, mas são marcados por avanços e retornos. Você verá em seguida uma sequência linear para desenvolvimento de produtos a partir das principais etapas de um projeto.               </p>
+              <p>Prepare-se para uma jornada de descoberta a respeito de como a compreensão das etapas de criação no <i>design</i> de produto torna-se um alicerce sólido para o <i>designer</i> de interiores, capacitando-o a criar ambientes excepcionais. </p>
+            </div>
+            <div class="section" id="tit3">
+              <h2>Pré-projeto</h2>
+              <p>O pré-projeto, também conhecido como fase de pré-<i>design</i> ou fase de concepção preliminar, é uma etapa fundamental no processo de <i>design</i> de produtos. Ele consiste em uma série de atividades e análises que ocorrem antes de iniciar efetivamente o desenvolvimento do produto. Essa fase é crucial para estabelecer uma base sólida e garantir que o projeto seja bem direcionado desde o início. </p>
+              <p>Confira algumas das principais atividades que compõem o pré-projeto em <i>design</i> de produtos. </p>
+              <div class="no-print" aria-hidden="true">
+                <p>Clique ou toque para visualizar o conteúdo.</p>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          1. Análise de necessidades de mercado 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <p>A primeira etapa envolve a compreensão das necessidades dos clientes e do mercado. Isso inclui pesquisas para identificar tendências, demandas do consumidor e lacunas no mercado que o novo produto pode preencher. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          2. Definição do público-alvo 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <p>Projetar um produto que seja relevante para o público-alvo é fundamental para o sucesso no mercado. Produtos que estão alinhados com o estilo de vida, os valores e as preferências do público têm uma maior probabilidade de serem bem recebidos e adotados pelos consumidores. Essa relevância é um fator-chave para a aceitação do produto. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          3. Definição de objetivos
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <p>Os objetivos do projeto são claramente estabelecidos nessa fase. Isso pode incluir metas de desempenho, requisitos de custo, prazos e critérios de sucesso que servirão como diretrizes para o restante do projeto. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading4">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                          4. Estudo da concorrência
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                      <div class="panel-body">
+                        <p>É importante analisar os produtos concorrentes para entender o que já está disponível no mercado, identificar oportunidades de diferenciação e garantir que o novo produto seja competitivo. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading5">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                          5. <i>Brainstorming</i> e ideação 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                      <div class="panel-body">
+                        <p>As equipes de <i>design</i> reúnem-se para gerar uma ampla gama de ideias e conceitos para o produto. Nessa fase, a criatividade é incentivada e não há limitações no número de ideias geradas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading6">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                          6. Seleção de conceitos 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                      <div class="panel-body">
+                        <p>Após o <i>brainstorming</i>, os conceitos gerados são avaliados e classificados. Os mais promissores são selecionados para serem desenvolvidos com mais detalhes.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading7">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                          7. Criação de protótipos conceituais
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                      <div class="panel-body">
+                        <p>Protótipos conceituais simples são criados para visualizar e testar as ideias. Esses protótipos não precisam ser funcionais, mas ajudam a comunicar e validar os conceitos. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading8">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                          8. Plano de projeto inicial
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                      <div class="panel-body">
+                        <p>Com base nas informações coletadas até este ponto, um plano de projeto inicial é desenvolvido. Isso inclui um cronograma aproximado, orçamento estimado e uma estratégia de desenvolvimento. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading9">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                          9. Apresentação e aprovação
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                      <div class="panel-body">
+                        <p>Os resultados do pré-projeto são apresentados à equipe de gerenciamento ou aos interessados, que avaliam se o projeto deve continuar ou ser revisado com base nas informações coletadas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="acessivel print">
+                <h4>1. Análise de necessidades de mercado</h4>
+                <p>A primeira etapa envolve a compreensão das necessidades dos clientes e do mercado. Isso inclui pesquisas para identificar tendências, demandas do consumidor e lacunas no mercado que o novo produto pode preencher. </p>
+                <h4>2. Definição do público-alvo</h4>
+                <p>Projetar um produto que seja relevante para o público-alvo é fundamental para o sucesso no mercado. Produtos que estão alinhados com o estilo de vida, os valores e as preferências do público têm uma maior probabilidade de serem bem recebidos e adotados pelos consumidores. Essa relevância é um fator-chave para a aceitação do produto. </p>
+                <h4>3. Definição de objetivos</h4>
+                <p>Os objetivos do projeto são claramente estabelecidos nessa fase. Isso pode incluir metas de desempenho, requisitos de custo, prazos e critérios de sucesso que servirão como diretrizes para o restante do projeto. </p>
+                <h4>4. Estudo da concorrência</h4>
+                <p>É importante analisar os produtos concorrentes para entender o que já está disponível no mercado, identificar oportunidades de diferenciação e garantir que o novo produto seja competitivo. </p>
+                <h4>5. <i>Brainstorming</i> e ideação</h4>
+                <p>As equipes de <i>design</i> reúnem-se para gerar uma ampla gama de ideias e conceitos para o produto. Nessa fase, a criatividade é incentivada e não há limitações no número de ideias geradas.</p>
+                <h4>6. Seleção de conceitos </h4>
+                <p>Após o <i>brainstorming</i>, os conceitos gerados são avaliados e classificados. Os mais promissores são selecionados para serem desenvolvidos com mais detalhes.</p>
+                <h4>7. Criação de protótipos conceituais</h4>
+                <p>Protótipos conceituais simples são criados para visualizar e testar as ideias. Esses protótipos não precisam ser funcionais, mas ajudam a comunicar e validar os conceitos. </p>
+                <h4>8. Plano de projeto inicial</h4>
+                <p>Com base nas informações coletadas até este ponto, um plano de projeto inicial é desenvolvido. Isso inclui um cronograma aproximado, orçamento estimado e uma estratégia de desenvolvimento. </p>
+                <h4>9. Apresentação e aprovação</h4>
+                <p>Os resultados do pré-projeto são apresentados à equipe de gerenciamento ou aos interessados, que avaliam se o projeto deve continuar ou ser revisado com base nas informações coletadas.</p>
+              </div>
+              <p>Entenda a seguir o início do processo criativo desenvolvido pelo <i>designer</i> Thiago Sartorelli para a criação da poltrona Ginga. </p>
+              <p>Em um primeiro momento, Sartorelli apresenta algumas perguntas fundamentais que guiaram o seu processo criativo. Assim, questionamentos como “o que vou projetar?”, “por que vou projetar?”, “como vou projetar?” e “para quem vou projetar?” criam um ambiente próspero para o delineamento do projeto. Após esses questionamentos, o <i>designer</i> investiga o público-alvo potencial para a sua poltrona e representa-o em um painel. </p>
+              <p>Ao conhecer o público-alvo, os <i>designers</i> têm a capacidade de compreender as necessidades específicas, as expectativas e os desejos desse grupo de consumidores. Essa compreensão profunda permite direcionar o processo de <i>design</i> de forma a criar produtos que atendam a essas demandas de maneira eficaz. Isso significa que o produto resultante tem uma maior probabilidade de ser funcional e útil para o público a que se destina. </p>
+              <p>Veja na figura o painel que representa o público-alvo do <i>designer</i> para a poltrona Ginga. </p>
+              <img src="imgs/Figura1.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+              <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+              <a href="imgs/Figura1.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura1.jpg" class="center-block img-responsive"></a>
+              <p class="legenda-imagem">
+                Painel de público-alvo<br>
+                Fonte: Sartorelli (2023)
+              </p>
+              <p class="acessivel no-print">Na imagem são apresentados os elementos que servirão de apoio ao designer para identificação do público-alvo. Imagens de natureza e pessoas são retratadas e darão apoio à criação do conceito do móvel.</p>
+              <p>A pesquisa de mercado e a análise inicial ajudam a equipe de <i>design</i> a compreender o ambiente competitivo e as necessidades específicas dos consumidores. Isso inclui a identificação de lacunas no mercado, oportunidades não atendidas e problemas que os produtos podem resolver. Essa compreensão é essencial para a criação de um produto que seja relevante e atraente para os clientes. </p>
+              <p>Veja como Sartorelli sintetiza essa etapa de pesquisa em um painel no qual produtos concorrentes e similares são estudados. Nesse estudo, as questões formais/estéticas e funcionais são compreendidas e possíveis lacunas de mercado são identificadas. </p>
+              <img src="imgs/Figura2.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+              <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+              <a href="imgs/Figura2.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura2.jpg" class="center-block img-responsive"></a>
+              <p class="legenda-imagem">
+                Pesquisa de similares e concorrentes para o desenvolvimento do móvel<br>
+                Fonte: Sartorelli (2023)
+              </p>
+              <p class="acessivel no-print">Na imagem são apresentadas poltronas similares e produtos concorrentes à poltrona que será desenvolvida. São poltronas com encosto inclinado e com base em madeiras com tons médios, mais caramelizados. Os formatos são bem diversos, algumas com pés mais curvos e longínquos, outras com os quatro pés em estilo palito. Esse estudo servirá para a elaboração dos primeiros croquis. </p>
+              <p>O passo seguinte é a geração de alternativas. Nessa fase, os <i>designers</i> exploram uma variedade de ideias, conceitos e soluções criativas para atender a um determinado problema ou necessidade. Essa etapa é um estágio crucial, frequentemente marcado por <i>brainstorming</i> e experimentação, que visa criar um leque diversificado de opções de <i>design</i>. Veja na figura o processo de desenvolvimento de alternativas para a poltrona Ginga.</p>
+              <img src="imgs/Figura3.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+              <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+              <a href="imgs/Figura3.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura3.jpg" class="center-block img-responsive"></a>
+              <p class="legenda-imagem">
+                Croquis da poltrona Ginga <br>
+                Fonte: Sartorelli (2023)
+              </p>
+              <p class="acessivel no-print">Na imagem são apresentados vários croquis e alguns mock-ups da poltrona Ginga. Nessas imagens são realizados alguns estudos formais da poltrona. São apresentadas várias possibilidades de croquis, todos com formatos fluidos e linhas gestuais e orgânicas. Os desenhos são bidimensionais e a modelagem é em alguns materiais como argila e papelão.</p>
+              <p>A geração de alternativas no <i>design</i> de produtos é um estágio criativo e exploratório, no qual a imaginação e a experimentação desempenham um papel fundamental. É uma etapa fundamental para garantir que o produto final seja inovador, funcional e capaz de atender às necessidades do público-alvo. A partir das alternativas geradas, os <i>designers</i> podem avançar na criação de produtos sólidos e bem-sucedidos. </p>
+            </div>
+            <div class="section" id="tit4">
+              <h2><i>Mock-up</i></h2>
+              <p>A fase de <i>mock-up</i> é uma etapa crucial que envolve a criação de representações físicas ou visuais do conceito de <i>design</i> antes da produção em massa. Esses <i>mock-ups</i> permitem que a equipe de <i>design</i> avalie o produto de maneira tangível e identifique problemas, faça melhorias e refine o <i>design</i>. Isso pode incluir a criação de modelos físicos, em escala real ou em tamanho reduzido, bem como representações visuais, como desenhos técnicos ou renderizações em 3D (tridimensionais). </p>
+              <p>Uma das principais funções da fase de <i>mock-up</i> é a realização de testes de usabilidade, nos quais os usuários potenciais interagem com os modelos para avaliar a facilidade de uso, a ergonomia e a experiência geral do usuário. Os <i>feedbacks</i> obtidos nesses testes são essenciais para aperfeiçoar o <i>design</i> antes da produção. Além disso, os <i>mock-ups</i> são usados para comunicar o conceito de <i>design</i> aos clientes e outras partes interessadas, facilitando a compreensão e a tomada de decisões informadas. </p>
+              <p>Essa fase também ajuda a economizar recursos, pois permite identificar e corrigir problemas de <i>design</i> antes que se tornem custosos de resolver durante a produção em larga escala. Assim, a fase de <i>mock-up</i> contribui para a criação de produtos de alta qualidade que atendem às expectativas dos clientes e são funcionais e esteticamente agradáveis. </p>
+              <p>Para o desenvolvimento de <i>mock-ups</i>, uma variedade de materiais pode ser utilizada, dependendo das necessidades do projeto, do estágio de desenvolvimento e do objetivo do <i>mock-up</i>. É sempre interessante que o projetista esteja atento à questão da sustentabilidade, reaproveitando materiais para a construção de seus <i>mock-ups</i>.</p>
+              <p>Confira alguns dos principais materiais frequentemente usados: </p>
+              <div class="no-print" aria-hidden="true">
+                <p>Clique ou toque para visualizar o conteúdo.</p>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-papelao">Papelão</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-poliestireno">Espuma de poliestireno</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-mdf">MDF</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-pluma">Papel-pluma</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-mache">Papel machê</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-argila">Argila</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-palitos">Palitos de churrasco</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-clipes">Clipes e arames</button>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modal-clay">Massa <i>clay</i></button>
+                <div class="modal fade" id="modal-papelao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Papelão</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>O papelão é um material versátil e acessível para criar <i>mock-ups</i> de mobiliário. Ele pode ser cortado e moldado facilmente para representar formas e estruturas. É especialmente útil para criar modelos de tamanho real ou maquetes de conceitos iniciais.</p>
+                        <img src="imgs/Figura7.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura7.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura7.jpg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Caixa de papelão<br>
+                          Fonte: Freepik (2023)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-poliestireno" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Espuma de poliestireno</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>A espuma de poliestireno ou poliuretano é leve e pode ser esculpida para criar <i>mock-ups</i> de formas complexas. Esse material é frequentemente usado para representar contornos de assentos, encostos ou detalhes decorativos.</p>
+                        <img src="imgs/Figura8.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura8.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura8.jpg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Espuma de Poliestireno<br>
+                          Fonte: Freepik (2023)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-mdf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">MDF</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>O MDF (<i>medium density fiberboard</i> ou “placa de fibra de média densidade”) é um material comum na fabricação de móveis e pode ser usado para criar protótipos e <i>mock-ups</i> de alta fidelidade. Ele é fácil de cortar, moldar e pintar, sendo assim adequado para criar modelos realistas.</p>
+                        <img src="imgs/Figura9.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura9.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura9.jpg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Chapas de MDF<br>
+                          Fonte: Freepik (2023)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-pluma" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Papel-pluma</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>O papel-pluma (<i>foam board</i>) é uma placa de espuma revestida com papel em ambos os lados. É leve, fácil de cortar e adequado para representar superfícies planas em móveis.</p>
+                        <img src="imgs/Figura10.jpeg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura10.jpeg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura10.jpeg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Folhas de papel-pluma<br>
+                          Fonte: Fluir (s. d.)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-mache" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Papel machê</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>O papel machê é um material versátil e econômico, que pode ser usado de várias maneiras no desenvolvimento de <i>mock-ups</i> de produtos, como a modelagem de formas e a criação de texturas.</p>
+                        <img src="imgs/Figura11.jpeg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura11.jpeg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura11.jpeg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Papel machê<br>
+                          Fonte: Ramirez (2021)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-argila" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Argila</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Embora a argila seja mais comumente associada à escultura e modelagem artística, ela também tem aplicações valiosas em <i>design</i> de produto. A argila pode ser moldada e esculpida para criar formas tridimensionais que representam partes de um produto, como o corpo de um objeto, um componente de mobiliário ou uma superfície arredondada. Além disso, a argila é fácil de trabalhar e permite uma experimentação rápida. Os <i>designers</i> podem fazer ajustes e interações rapidamente à medida que refinam o <i>design</i> do produto. </p>
+                        <img src="imgs/Figura12.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura12.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura12.jpg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Argila na criação de mock-ups<br>
+                          Fonte: Freepik (2023)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-palitos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Palitos de churrasco</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Podem ser usados como estruturas básicas para representar a forma geral de um produto. Eles podem ser cortados, dobrados e colados para criar uma estrutura que se assemelhe ao tamanho e à forma do produto final.</p>
+                        <img src="imgs/Figura13.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura13.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura13.jpg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Palitos de madeira<br>
+                          Fonte: Freepik (2023)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-clipes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Clipes e arames</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Podem ser usados para criar estruturas básicas, semelhantemente ao uso dos palitos de churrasco. Eles podem ser dobrados e unidos para formar a estrutura do produto ou para criar molduras e esqueletos. Se o seu produto incluir partes móveis ou dobradiças, clipes e arames podem ser usados para representar essas funcionalidades. Você pode dobrar os clipes de maneira adequada e prendê-los com outros materiais, como papelão, para simular essas características. </p>
+                        <img src="imgs/Figura14.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                        <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                        <a href="imgs/Figura14.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura14.jpg" class="center-block img-responsive"></a>
+                        <p class="legenda-imagem">
+                          Clipes de papel<br>
+                          Fonte: Freepik (2023)
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-clay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Massa <i>clay</i></h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Permite a modelagem de detalhes, curvas, além disso, pode ser usada para simular texturas, como couro, metal, plástico e tecido. </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="acessivel print">
+                <h4>Papelão</h4>
+                <p>O papelão é um material versátil e acessível para criar <i>mock-ups</i> de mobiliário. Ele pode ser cortado e moldado facilmente para representar formas e estruturas. É especialmente útil para criar modelos de tamanho real ou maquetes de conceitos iniciais.</p>
+                <img src="imgs/Figura7.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Caixa de papelão<br>
+                  Fonte: Freepik (2023)
+                </p>
+                <p class="no-print">Na imagem há uma caixa de papelão fechada.</p>
+                <h4>Espuma de poliestireno</h4>
+                <p>A espuma de poliestireno ou poliuretano é leve e pode ser esculpida para criar <i>mock-ups</i> de formas complexas. Esse material é frequentemente usado para representar contornos de assentos, encostos ou detalhes decorativos.</p>
+                <img src="imgs/Figura8.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Espuma de Poliestireno<br>
+                  Fonte: Freepik (2023)
+                </p>
+                <p class="no-print">Na imagem são apresentados alguns pedaços de espuma de poliestireno.</p>
+                <h4>MDF</h4>
+                <p>O MDF (<i>medium density fiberboard</i> ou “placa de fibra de média densidade”) é um material comum na fabricação de móveis e pode ser usado para criar protótipos e <i>mock-ups</i> de alta fidelidade. Ele é fácil de cortar, moldar e pintar, sendo assim adequado para criar modelos realistas.</p>
+                <img src="imgs/Figura9.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Chapas de MDF<br>
+                  Fonte: Freepik (2023)
+                </p>
+                <p class="no-print">Na imagem há três chapas de MDF nas cores branca, amadeirada e azul-marinho, dispostas sobre pequenas toras de madeira.</p>
+                <h4>Papel-pluma</h4>
+                <p>O papel-pluma (<i>foam board</i>) é uma placa de espuma revestida com papel em ambos os lados. É leve, fácil de cortar e adequado para representar superfícies planas em móveis.</p>
+                <img src="imgs/Figura10.jpeg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Folhas de papel-pluma<br>
+                  Fonte: Fluir (s. d.)
+                </p>
+                <p class="no-print">Na imagem existem algumas folhas de papel-pluma na cor chumbo sobrepostas.</p>
+                <h4>Papel machê</h4>
+                <p>O papel machê é um material versátil e econômico, que pode ser usado de várias maneiras no desenvolvimento de <i>mock-ups</i> de produtos, como a modelagem de formas e a criação de texturas.</p>
+                <img src="imgs/Figura11.jpeg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Papel machê<br>
+                  Fonte: Ramirez (2021)
+                </p>
+                <p class="no-print">Na imagem tem-se uma esfera de papel machê sendo segurada por uma mão humana.</p>
+                <h4>Argila</h4>
+                <p>Embora a argila seja mais comumente associada à escultura e modelagem artística, ela também tem aplicações valiosas em <i>design</i> de produto. A argila pode ser moldada e esculpida para criar formas tridimensionais que representam partes de um produto, como o corpo de um objeto, um componente de mobiliário ou uma superfície arredondada. Além disso, a argila é fácil de trabalhar e permite uma experimentação rápida. Os <i>designers</i> podem fazer ajustes e interações rapidamente à medida que refinam o <i>design</i> do produto. </p>
+                <img src="imgs/Figura12.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Argila na criação de mock-ups<br>
+                  Fonte: Freepik (2023)
+                </p>
+                <p class="no-print">Mãos modelam um formato esférico de argila.</p>
+                <h4>Palitos de churrasco</h4>
+                <p>Podem ser usados como estruturas básicas para representar a forma geral de um produto. Eles podem ser cortados, dobrados e colados para criar uma estrutura que se assemelhe ao tamanho e à forma do produto final.</p>
+                <img src="imgs/Figura13.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Palitos de madeira<br>
+                  Fonte: Freepik (2023)
+                </p>
+                <p class="no-print">Na imagem são apresentados alguns palitos de madeira.</p>
+                <h4>Clipes e arames</h4>
+                <p>Podem ser usados para criar estruturas básicas, semelhantemente ao uso dos palitos de churrasco. Eles podem ser dobrados e unidos para formar a estrutura do produto ou para criar molduras e esqueletos. Se o seu produto incluir partes móveis ou dobradiças, clipes e arames podem ser usados para representar essas funcionalidades. Você pode dobrar os clipes de maneira adequada e prendê-los com outros materiais, como papelão, para simular essas características. </p>
+                <img src="imgs/Figura14.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Clipes de papel<br>
+                  Fonte: Freepik (2023)
+                </p>
+                <p class="no-print">A imagem apresenta dois clipes de papel, feitos de metal. Esse material é muito útil na construção de maquetes.</p>
+                <h4>Massa <i>clay</i></h4>
+                <p>Permite a modelagem de detalhes, curvas, além disso, pode ser usada para simular texturas, como couro, metal, plástico e tecido. </p>
+              </div>
+            </div>
+            <div class="section" id="tit5">
+              <h2>Projeto executivo</h2>
+              <p>A fase de projeto executivo em design de produtos é uma etapa crucial do processo de desenvolvimento, na qual os conceitos e ideias gerados durante as fases anteriores são detalhados e transformados em um projeto completo e prontamente executável. Essa fase envolve a criação de documentação técnica detalhada, que permitirá a fabricação ou produção do produto.  </p>
+              <p>Nesse momento, testes com os protótipos são validados e melhorias são implementadas. A figura mostra a poltrona Ginga passando para a fase de projeto executivo, na qual ajustes no dimensionamento são executados e revisões quanto aos aspectos ergonômicos são aprimoradas.</p>
+              <img src="imgs/Figura5.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+              <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+              <a href="imgs/Figura5.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura5.jpg" class="center-block img-responsive"></a>
+              <p class="legenda-imagem">
+                Projeto executivo da poltrona Ginga<br>
+                Fonte: Sartorelli (2023) 
+              </p>
+              <p class="acessivel no-print">Na imagem há um compilado de fotografias do processo executivo da poltrona. Os protótipos são apresentados assim como as demonstrações da montagem, os usos e as pranchas de apresentação.</p>
+              <p>Observe a seguir as etapas que são atendidas na fase de projeto executivo: </p>
+              <div class="no-print" aria-hidden="true">
+                <p>Clique ou toque para visualizar o conteúdo.</p>
+                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading10">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                          Detalhamento do <i>design</i>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse10" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading10">
+                      <div class="panel-body">
+                        <p>Nessa etapa, os <i>designers</i> trabalham na especificação detalhada de todos os aspectos do produto, incluindo dimensões precisas, materiais, componentes e características específicas. Isso envolve a criação de desenhos técnicos, modelos CAD (<i>computer-aided design</i>) e planos detalhados.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading11">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                          Seleção de materiais e componentes 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                      <div class="panel-body">
+                        <p>Os materiais e componentes exatos a serem usados no produto são escolhidos e especificados. Isso considera a disponibilidade, os custos, o desempenho e outros critérios relevantes. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading12">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                          Prototipagem funcional 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                      <div class="panel-body">
+                        <p>Durante essa fase, é comum criar protótipos funcionais do produto para testar e validar o <i>design</i>. Esses protótipos podem ser usados para verificar se todas as partes do produto funcionam como planejado e se atendem aos requisitos de desempenho.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading13">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                          Detalhamento da fabricação 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                      <div class="panel-body">
+                        <p>Nessa fase são elaborados documentos que descrevem como o produto será fabricado em escala. Isso inclui instruções para montagem, soldagem, usinagem, corte a <i>laser</i> e outros processos de fabricação. Também podem ser criadas ferramentas e gabaritos de fabricação. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading14">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                          Testes e validação
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                      <div class="panel-body">
+                        <p>Durante essa fase, o produto é submetido a uma série de testes rigorosos para garantir que ele atenda a todos os requisitos de desempenho, segurança e qualidade. Os resultados dos testes são usados para fazer ajustes finais no projeto, se necessário.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading15">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                          Criação de documentação técnica 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                      <div class="panel-body">
+                        <p>Todos os documentos técnicos necessários para a produção em massa são preparados, incluindo listas de materiais, instruções de montagem, manuais do usuário e especificações técnicas detalhadas. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading16">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                          Orçamento final 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+                      <div class="panel-body">
+                        <p>Um orçamento final é elaborado com base nas escolhas de materiais e nos processos de fabricação, o que ajuda a determinar os custos finais do projeto e a viabilidade econômica do produto. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading17">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                          Preparação para a produção 
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+                      <div class="panel-body">
+                        <p>Nesta etapa, todos os preparativos finais são feitos para iniciar a produção em massa do produto. Isso pode incluir a seleção de fornecedores, a configuração de linhas de produção e a criação de planos de qualidade. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="acessivel print">
+                <h4>Detalhamento do <i>design</i></h4>
+                <p>Nessa etapa, os <i>designers</i> trabalham na especificação detalhada de todos os aspectos do produto, incluindo dimensões precisas, materiais, componentes e características específicas. Isso envolve a criação de desenhos técnicos, modelos CAD (<i>computer-aided design</i>) e planos detalhados.</p>
+                <h4>Seleção de materiais e componentes</h4>
+                <p>Os materiais e componentes exatos a serem usados no produto são escolhidos e especificados. Isso considera a disponibilidade, os custos, o desempenho e outros critérios relevantes. </p>
+                <h4>Prototipagem funcional</h4>
+                <p>Durante essa fase, é comum criar protótipos funcionais do produto para testar e validar o <i>design</i>. Esses protótipos podem ser usados para verificar se todas as partes do produto funcionam como planejado e se atendem aos requisitos de desempenho.</p>
+                <h4>Detalhamento da fabricação</h4>
+                <p>Nessa fase são elaborados documentos que descrevem como o produto será fabricado em escala. Isso inclui instruções para montagem, soldagem, usinagem, corte a <i>laser</i> e outros processos de fabricação. Também podem ser criadas ferramentas e gabaritos de fabricação. </p>
+                <h4>Testes e validação</h4>
+                <p>Durante essa fase, o produto é submetido a uma série de testes rigorosos para garantir que ele atenda a todos os requisitos de desempenho, segurança e qualidade. Os resultados dos testes são usados para fazer ajustes finais no projeto, se necessário.</p>
+                <h4>Criação de documentação técnica</h4>
+                <p>Todos os documentos técnicos necessários para a produção em massa são preparados, incluindo listas de materiais, instruções de montagem, manuais do usuário e especificações técnicas detalhadas.</p>
+                <h4>Orçamento final</h4>
+                <p>Um orçamento final é elaborado com base nas escolhas de materiais e nos processos de fabricação, o que ajuda a determinar os custos finais do projeto e a viabilidade econômica do produto. </p>
+                <h4>Preparação para a produção</h4>
+                <p>Nesta etapa, todos os preparativos finais são feitos para iniciar a produção em massa do produto. Isso pode incluir a seleção de fornecedores, a configuração de linhas de produção e a criação de planos de qualidade. </p>
+              </div>
+              <p>Segundo o <i>designer</i> Thiago Sartorelli, nessa etapa de projeto executivo buscou-se simplificar o processo de produção e ao mesmo tempo escalar a produtividade com garantia de padronização entre as unidades produzidas. O <i>designer</i> propôs nessa etapa a utilização de madeira laminada. O GIF (Sartorelli, 2023) mostra os registros feitos pelo <i>designer</i> das melhorias no detalhamento da poltrona Ginga.</p>
+              <img src="imgs/Figura6.gif" class="center-block img-responsive hidden-sm hidden-xs print">
+              <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+              <a href="imgs/Figura6.gif" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura6.gif" class="center-block img-responsive"></a>
+              <p class="legenda-imagem">
+                Detalhamentos na Poltrona Ginga<br>
+                Fonte: https://www.behance.net/gallery/177072977/Ginga-Lounge-Chair?tracking_source=search_projects|mobiliario&
+              </p>
+              <p class="acessivel no-print"> A animação apresenta o protótipo da poltrona montado. A poltrona tem encosto alto, assento alongado e inclinado e a parte posterior serve como base. Os braços são em folha de metal dobrada, em espessura de aproximadamente cinco centímetros. Os braços são em formato elíptico e os pés da poltrona são integrados por uma barra de madeira horizontal. </p>
+            </div>
+            <div class="section" id="tit6">
+              <h2>O que são os protótipos?</h2>
+              <p>Como comentado anteriormente, a fase de prototipagem funcional é um trabalho importante para o <i>design</i> de mobiliário. É um componente crítico do processo de desenvolvimento de produtos, na qual os conceitos e as ideias geradas anteriormente começam a ganhar forma física. Essa etapa consiste em criar modelos ou protótipos tangíveis que representem as soluções de <i>design</i> propostas, de forma funcional, diferentemente do <i>mock-up</i>. </p>
+              <p>A prototipação possibilita que os <i>designers</i> e as equipes de desenvolvimento visualizem e avaliem como o produto final poderá se parecer e funcionar na vida real. Isso é essencial para tomar decisões informadas sobre o <i>design</i> e identificar qualquer problema potencial que possa surgir durante a produção em escala. Na figura, observe a fase de prototipação da poltrona Ginga. </p>
+              <img src="imgs/Figura4.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+              <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+              <a href="imgs/Figura4.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura4.jpg" class="center-block img-responsive"></a>
+              <p class="legenda-imagem">
+                Fase de prototipação<br>
+                Fonte: Sartorelli (2023)
+              </p>
+              <p class="acessivel no-print">Na imagem são apresentadas as partes do protótipo da poltrona desmontado, com um croqui da poltrona ao lado. As partes do protótipo são de madeira, sem tratamento e pintura, e metal. </p>
+            </div>
+            <div class="section" id="tit7">
+              <h2>Especificação</h2>
+              <p>A etapa de especificação em um projeto de produto é uma fase fundamental que envolve a definição clara e detalhada de todos os requisitos, as características e os parâmetros do produto que está sendo desenvolvido. Essa etapa serve como base para todo o processo de <i>design</i>, desenvolvimento e fabricação do produto. </p>
+              <p>Nessa etapa são consideradas questões como restrições e regulamentações, padrões de segurança, normas ambientais, regulamentações de mercado. Além disso, são decididos os materiais e componentes que serão utilizados na fabricação do produto, o que inclui a seleção de materiais, peças, eletrônicos, <i>software</i> (se aplicável) e qualquer outra coisa necessária para construir o produto. </p>
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="imgs/" class="img-responsive center-block no-print" aria-hidden="true">
+                </div>
+                <div class="col-lg-9">
+                  <p>Na fase de especificação são detalhados também os custos e o orçamento do produto, e também é estabelecido um orçamento para o projeto, considerando os custos de materiais, mão de obra, equipamentos, entre outros. O controle de custos é fundamental para garantir que o projeto permaneça dentro do orçamento.</p>
+                </div>
+              </div>
+              <p>É importante que na etapa de especificação sejam realizados testes e validações para garantir que o produto atenda aos requisitos especificados. Isso pode incluir testes de desempenho, testes de durabilidade e testes de segurança. </p>
+              <p>Todo o processo de especificação deve ser documentado de forma clara e completa para que todas as partes envolvidas no projeto tenham acesso às informações necessárias. </p>
+              <p>A etapa de especificação é essencial para garantir que o produto seja desenvolvido de acordo com as expectativas dos clientes e os requisitos técnicos e regulamentares, e também para evitar problemas e retrabalhos no decorrer do projeto. Ela serve como um guia para toda a equipe de desenvolvimento e produção, fornecendo diretrizes claras para alcançar os objetivos estabelecidos. </p>
+            </div>
+            <div class="section" id="tit8">
+              <h2>Memorial descritivo</h2>
+              <p>A etapa de memorial descritivo é uma parte importante da documentação que descreve detalhadamente as características técnicas, funcionais e de <i>design</i> do produto em desenvolvimento. Esse documento serve como uma referência para a equipe de <i>design</i>, engenharia, produção e outras partes interessadas no projeto. No memorial descritivo constarão informações desde a descrição geral do produto até as especificações técnicas, como dimensões, peso, potência, capacidade, tolerâncias, materiais utilizados, propriedades físicas e químicas relevantes, entre outros.</p>
+              <div class="caixa-destaque-livre">
+                <p>O memorial descritivo é uma parte fundamental da documentação de projeto de produto, pois fornece uma base sólida para a equipe de desenvolvimento e produção trabalhar de acordo com as especificações e os requisitos estabelecidos. Ele também é útil para comunicação com partes interessadas, como clientes, fornecedores e reguladores, garantindo que todos tenham uma compreensão clara do produto em desenvolvimento.</p>
+              </div>
+            </div>
+            <div class="section" id="tit9">
+              <h2>Pranchas de apresentação </h2>
+              <p>As pranchas de apresentação em um projeto de <i>design</i> de produto são documentos visuais que ajudam a comunicar e apresentar o projeto de forma clara e eficaz. Elas são frequentemente usadas para transmitir informações essenciais sobre <i>design</i>, conceito, processo de desenvolvimento e especificações técnicas do produto. As pranchas de apresentação são uma parte fundamental da documentação de <i>design</i> e podem incluir uma variedade de elementos visuais, como imagens, ilustrações, texto e gráficos. </p>
+              <div class="no-print" aria-hidden="true">
+                <p>Clique ou toque para visualizar o conteúdo.</p>
+                <div id="carousel-example-generic" class="carousel slide no-print" data-ride="carousel" data-interval="false" aria-hidden="true">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+              
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <p>A figura mostra uma imagem de apresentação (<i>render</i>) da poltrona Ginga. Observe que na imagem é possível ver os materiais e a estrutura do móvel.</p>
+                      <img src="imgs/Figura15.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                      <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                      <a href="imgs/Figura15.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura15.jpg" class="center-block img-responsive"></a>
+                      <p class="legenda-imagem">
+                        <i>Render</i> de apresentação <br>
+                        Fonte: Sartorelli (2023)
+                      </p>
+                      <p class="acessivel no-print">Na figura é apresentada uma imagem renderizada da poltrona Ginga, ou seja, produzida por software de modelagem 3D. A poltrona está em uma posição oblíqua, em que é possível ver sua lateral e vista posterior. A poltrona é apresentada em madeira, com parte estrutural em metal. </p>
+                    </div>
+                    <div class="item">
+                      <p>Nesta figura é possível ver ainda uma perspectiva explodida da poltrona, em que os elementos de fixação são apresentados e uma imagem de conjunto é possibilitada, o que facilita a compreensão da equipe de produção.</p>
+                      <img src="imgs/Figura16.png" class="center-block img-responsive hidden-sm hidden-xs print">
+                      <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                      <a href="imgs/Figura16.png" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura16.png" class="center-block img-responsive"></a>
+                      <p class="legenda-imagem">
+                        Perspectiva explodida da poltrona Ginga<br>
+                        Fonte: Sartorelli (2023)
+                      </p>
+                    </div>
+                    <div class="item">
+                      <p>Já nesta figura pode-se ver as pranchas de apresentação da poltrona, nas quais elementos técnicos são elaborados à equipe como forma de comunicação.</p>
+                      <img src="imgs/Figura17.jpg" class="center-block img-responsive hidden-sm hidden-xs print">
+                      <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
+                      <a href="imgs/Figura17.jpg" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/Figura17.jpg" class="center-block img-responsive"></a>
+                      <p class="legenda-imagem">
+                        Pranchas de apresentação de projeto <br>
+                        Fonte: Sartorelli (2023)
+                      </p>
+                    </div>
+                  </div>
+              
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="acessivel print">
+                <p>A figura mostra uma imagem de apresentação (<i>render</i>) da poltrona Ginga. Observe que na imagem é possível ver os materiais e a estrutura do móvel.</p>
+                <img src="imgs/Figura15.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  <i>Render</i> de apresentação <br>
+                  Fonte: Sartorelli (2023)
+                </p>
+                <p class="no-print">Na figura é apresentada uma imagem renderizada da poltrona Ginga, ou seja, produzida por software de modelagem 3D. A poltrona está em uma posição oblíqua, em que é possível ver sua lateral e vista posterior. A poltrona é apresentada em madeira, com parte estrutural em metal. </p>
+                <p>Nesta figura é possível ver ainda uma perspectiva explodida da poltrona, em que os elementos de fixação são apresentados e uma imagem de conjunto é possibilitada, o que facilita a compreensão da equipe de produção.</p>
+                <img src="imgs/Figura16.png" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Perspectiva explodida da poltrona Ginga<br>
+                  Fonte: Sartorelli (2023)
+                </p>
+                <p class="no-print">Na perspectiva explodida é apresentada uma imagem digital da poltrona, na qual os elementos de montagem e fixação são apresentados. Esses elementos aparecem suspensos no ar e são eficientes para que a equipe de design entenda a montagem da poltrona. </p>
+                <p>Já nesta figura pode-se ver as pranchas de apresentação da poltrona, nas quais elementos técnicos são elaborados à equipe como forma de comunicação.</p>
+                <img src="imgs/Figura17.jpg" class="center-block img-responsive print">
+                <p class="legenda-imagem">
+                  Pranchas de apresentação de projeto <br>
+                  Fonte: Sartorelli (2023)
+                </p>
+                <p class="no-print">São apresentadas pranchas em formato A3 com detalhamentos formais e dimensionais da poltrona, além de algumas imagens de livros, importantes para as informações ergonômicas do projeto.</p>
+              </div>
+              <p>As pranchas de apresentação são uma ferramenta valiosa para transmitir ideias de <i>design</i> de forma clara e persuasiva a colegas, clientes, investidores ou qualquer pessoa envolvida no projeto. Elas devem ser organizadas de forma lógica e visualmente atraente para garantir que a equipe de <i>design</i> compreenda o projeto de maneira eficaz. </p>
+            </div>
+            <div class="section" id="tit10">
+              <h2>Encerramento</h2>
+              <p>Em resumo, este conteúdo, que contou com o apoio do <i>designer</i> Thiago Sartorelli, o qual gentilmente compartilhou a documentação de projeto da poltrona Ginga, mostrou que as etapas de um projeto de produto são um caminho meticuloso que guia a concepção, o desenvolvimento e o aperfeiçoamento de um produto desde sua ideia inicial até sua realização. </p>
+              <p>Cada etapa, desde a pesquisa inicial até a produção final, desempenha um papel crucial na criação de produtos que atendam às necessidades dos consumidores, ou seja, produtos funcionais, esteticamente atraentes e economicamente viáveis. </p>
+              <p>O <i>design</i> desempenha um papel central em todas essas etapas. Ele é o fio condutor que permeia o processo de criação, garantindo que o produto seja não apenas útil e funcional, mas também agradável ao usuário e competitivo no mercado. O <i>design</i> não é apenas uma questão de aparência; ele influencia profundamente a experiência do usuário, a qualidade do produto e sua capacidade de se destacar em um mercado saturado. </p>
+              <p>À medida que você explora as etapas de um projeto de produto e aprofunda sua compreensão da importância do <i>design</i>, fica claro que o <i>design</i> de produto não é um mero detalhe, mas sim uma disciplina fundamental que impacta diretamente a inovação, a eficácia e o sucesso de um produto no mercado. Portanto, ao avançar neste estudo sobre <i>design</i> de produto, você continuará a explorar como as escolhas de <i>design</i> moldam produtos que enriquecem a vida das pessoas e impulsionam o progresso em uma variedade de setores industriais. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+      <footer class="text-center no-print">
+        <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+      </footer>
+    </div>
+
+    <!-- Modais -->
+
+    <!-- Modais 100% -->
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+    <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../template/js/jquery.min.js"></script>
+    <script src="../template/js/bootstrap.min.js"></script>
+    <script src="../template/js/print.js"></script>
+    <script src="../template/js/template.config.js"></script>
+    <script src="../template/js/parallax.min.js"></script>
+    <noscript>
+      <style media="screen">
+        .over-loader {
+          display: none;
+        }
+      </style>
+    </noscript>
+  
+  <script>
+    var scriptElem = document.createElement("script");
+    (scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
+      (scriptElem.charset = "UTF-8"),
+      (scriptElem.onload = function () {
+        window.ht = new HT({
+          token: "bf5b7efb148a829a126a0e0c9fd533bf",
+          align: "top",
+          videoEnabled: true,
+          ytEmbedReplace: true,
+          mobileConfig: {
+            align: "right",
+            actionsAlign: "top",
+            customButtonStyle: {
+              borderRadius: "6px",
+              size: "38px",
+              horizontalMargin: "13px",
+              bottomMargin: "140px",
+              rightMargin: "40px",
+            },
+          },
+        });
+        $(".ht-skip").attr("aria-hidden", "true");
+      }),
+      document.body.appendChild(scriptElem);
+  </script>
+  </body>
+</html>

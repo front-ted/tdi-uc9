@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html
+  lang="pt-br"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+      Acabamentos para móveis
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="../template/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet" />
+    <link href="../template/css/cores.css" rel="stylesheet" />
+    <link href="../template/css/modal-100.css" rel="stylesheet" />
+    <!--Extras - novas classes para facilitar-->
+    <link rel="stylesheet" href="../template/css/extras.css" />
+    <link href="../template/css/sncload.css" rel="stylesheet" />
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <!-- css necessario para o print -->
+    <link
+      href="../template/css/fa/css/font-awesome.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
+    <link
+      href="../template/fonts/roboto.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    onLoad="Javascript:document.getElementById('sncloader').style.display='none';"
+  >
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo" />
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id="sncloader" class="over-loader">
+      <div class="over-cell">
+        <div id="sncload"></div>
+      </div>
+    </div>
+    <header id="topo" class="senac no-print">
+      <div class="header-tecnicos container">
+        <h1 id="nome-curso">Design de interiores</h1>
+        <div id="logo-senac">
+          <img src="../template/images/logo-senac.png" alt="logo do senac" />
+        </div>
+      </div>
+      <div id="sombra"></div>
+    </header>
+    <div id="booklet" class="">
+      <header class="no-print container margem-botao">
+        <!-- BTO IMPRIMIR -->
+        <div class="grupo-imprimir no-print">
+          <button
+            type="button"
+            data-pdf="true"
+            class="bto-imprimir"
+            name="button"
+          >
+            <span class="fa fa-print"></span> <span>Imprimir</span>
+          </button>
+        </div>
+        <!-- /BTO IMPRIMIR -->
+      </header>
+      
+      <!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+      <section class="paginas">
+        <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+        <div class="pagina">
+          <div class="container">
+            <h2>Acabamentos para móveis</h2>
+            <h3>Etapas do projeto: pré-projeto, projeto executivo, especificação, memorial descritivo, <i>mock-up</i>, protótipos, pranchas de apresentação</h3>
+            <p>Quando se trata de criar espaços que refletem personalidade, estilo e funcionalidade, a seleção de materiais, texturas e cores para os móveis desempenha um papel fundamental. Portanto, ter pleno conhecimento dos tipos de acabamentos disponíveis no mercado é de extrema importância para o profissional de <i>design</i> de interiores. </p>
+            <p>A seguir, confira as principais características de cada um dos acabamentos para ajudá-lo a tomar as melhores decisões na hora de detalhar o móvel para o seu cliente. </p>
+          </div>
+        </div>
+      </section>
+      <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+      <footer class="text-center no-print">
+        <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+      </footer>
+    </div>
+
+    <!-- Modais -->
+
+    <!-- Modais 100% -->
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+    <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../template/js/jquery.min.js"></script>
+    <script src="../template/js/bootstrap.min.js"></script>
+    <script src="../template/js/print.js"></script>
+    <script src="../template/js/template.config.js"></script>
+    <script src="../template/js/parallax.min.js"></script>
+    <noscript>
+      <style media="screen">
+        .over-loader {
+          display: none;
+        }
+      </style>
+    </noscript>
+  
+  <script>
+    var scriptElem = document.createElement("script");
+    (scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
+      (scriptElem.charset = "UTF-8"),
+      (scriptElem.onload = function () {
+        window.ht = new HT({
+          token: "bf5b7efb148a829a126a0e0c9fd533bf",
+          align: "top",
+          videoEnabled: true,
+          ytEmbedReplace: true,
+          mobileConfig: {
+            align: "right",
+            actionsAlign: "top",
+            customButtonStyle: {
+              borderRadius: "6px",
+              size: "38px",
+              horizontalMargin: "13px",
+              bottomMargin: "140px",
+              rightMargin: "40px",
+            },
+          },
+        });
+        $(".ht-skip").attr("aria-hidden", "true");
+      }),
+      document.body.appendChild(scriptElem);
+  </script>
+  </body>
+</html>
