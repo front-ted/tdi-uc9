@@ -15,7 +15,7 @@ header{
 .menu {
     height: 105px;
     width: 100%;
-    background-color: #0a4684;
+    background-color: #35817f;
     position:static;
     top: 0px;
     box-shadow: -4px 4px 8px #333;
@@ -145,7 +145,7 @@ header{
   .navbar-light .navbar-nav .nav-link{
     padding: 5px 0;
   }
-  .offcanvas{background-color: #0a4684;}
+  .offcanvas{background-color: #35817f;}
   
   .dropdown button{
     background: url("../images/menu_hamburguer.svg") center no-repeat;
@@ -163,7 +163,7 @@ header{
   }
   .dropdown-menu{
     background: unset;
-    background-color: #0a4684 !important;
+    background-color: #35817f !important;
   
   }
   .bg-fundo {
