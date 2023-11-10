@@ -16,3 +16,21 @@ window.addEventListener("scroll", function() {
         menuTopo.classList.remove("fixedmenu");
     }
 });
+
+//codigo para rolagem do menu - inicia em 80 px e depois zera//
+document.addEventListener("DOMContentLoaded", function() {
+    var menu = document.getElementById("fixedMenu");
+    var initialMarginTop = 80;
+
+    // Adiciona um ouvinte de rolagem à página
+    window.addEventListener("scroll", function() {
+        // Verifica se o usuário já rolou a página
+        if (window.scrollY > 0) {
+            // Se sim, ajusta a margem superior para 0
+            menu.style.marginTop = "0";
+        } else {
+            // Caso contrário, mantém a margem inicial
+            menu.style.marginTop = initialMarginTop + "px";
+        }
+    });
+});
