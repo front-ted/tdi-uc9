@@ -1,8 +1,8 @@
 header{
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 50px;
 }
-
+html{scroll-behavior: smooth;}
 /*MENU*/
 .fixedmenu{
     position:fixed;
@@ -18,7 +18,7 @@ header{
     width: 100%;
     background-color: #35817f;
     position:fixed;
-    margin-top: 4%;
+    margin-top: 5%;
     box-shadow: -4px 4px 8px #333;
     display: flex;
     justify-content: center;
@@ -26,6 +26,7 @@ header{
     padding-left: 40px;
     padding-right: 40px;
     z-index: 9999999;
+    transition: all .4s;
 } 
 
 .menu.with-margin{
@@ -34,29 +35,21 @@ header{
 
 
 .menu a {
-    color: white;
-    display: inline-block;
-    padding: 5px;
-    width: fit-content;
-    max-width: 195px;
-    font-size: 16px;
-    margin: 0 20px;
-    text-decoration: none;
-    position: relative;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  width: fit-content;
+  max-width: 105px;
+  vertical-align: middle;
+  font-size: 16px;
+  margin: 0 20px;
+  text-decoration: none;
+  position: relative;
+  text-align: center;
 }
-.menu a:hover {
+.menu a:hover, .menu a.active {
     text-decoration: underline;
 }
-.menu a::before {
-    content: '';
-    height: 22px;
-    width: 24px;
-    position: absolute;
-    left: -20px;
-    top: 6px;
-    background-image: url('../img/svg/icone-angle-down.svg');
-}
-
 
 .mobile-start {
     position: absolute;
@@ -76,14 +69,17 @@ header{
     transform: scale(1.2);
 }
 
-
+.dropdown{
+  position: fixed;
+  top: 80px;
+  z-index: 5;
+}
 .dropdown-menu{
     background: #707070;
     border-radius: 0;
     padding: 20px 35px;
-    box-shadow: 4px 4px 0px rgba(187, 187, 187, 0.8);
-    left: -1px !important;
-    top: -2px !important;
+    left: 0;
+    top: 45px;
   
   }
   .dropdown-menu a{
@@ -120,13 +116,15 @@ header{
     top: 0;
     margin-top: unset;
     z-index: 9;
-   
+  }
+  .dropdown-menu>li>a{
+    color: #fff;
+    padding: 3px 10px;
   }
   .dropdown-menu ul{
     list-style: none;
     padding: 0;
     margin: 0;
-      
   }
   .accordion-button i{
     font-size: 20px;
@@ -155,24 +153,25 @@ header{
   .offcanvas{background-color: #35817f;}
   
   .dropdown button{
-    background: url("../images/menu_hamburguer.svg") center no-repeat;
-    background-color:transparent;
-    background-size: 100%;
-    box-shadow: 4px 4px 0px rgba(187, 187, 187, 0.8);
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    padding: 20px;
-    top: 15px;
-    left: 15px;
-    position: fixed;
+    background-color:#35817f;
+    width: 45px;
+    height: 47px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    position: absolute;                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     z-index: 99999;
+    display: none;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
   }
+  .dropdown .btn:focus, .dropdown button.hover{color: #fff;}
   .dropdown-menu{
     background: unset;
     background-color: #35817f !important;
-  
   }
+  .dropdown-menu li{list-style: none;}
   .bg-fundo {
     background-color: #000;
     width: 100%;
@@ -205,7 +204,7 @@ header{
     background: #35817f;
     padding: 100px 0;
 }
-.bloco2 *, .bloco3 *, .bloco4 *, .bloco6 *{color: #fff;}
+.bloco2 *, .bloco3 *, .bloco4 *, .bloco5 *, .bloco6 *{color: #fff;}
 .bloco2 .panel-group *, 
 .bloco3 .panel-group *,
 .bloco4 .panel-group *, 
@@ -280,6 +279,11 @@ header{
     background: url('../imgs/ilustra_direita10.png') no-repeat right 20px top 30% / 10%;
     background-color:#35817f;
     padding: 100px 0;
+}
+
+@media screen and (max-width: 1500px){
+  .dropdown button{display: block;}
+  #fixedMenu{display: none;}
 }
 
 
