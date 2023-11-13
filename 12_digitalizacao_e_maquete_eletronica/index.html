@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html
+  lang="pt-br"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+      Digitalização e maquete eletrônica: <i>softwares</i>, modelagem, edição,
+      visualização, documentação e publicação
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="../template/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet" />
+    <link href="../template/css/cores.css" rel="stylesheet" />
+    <link href="../template/css/modal-100.css" rel="stylesheet" />
+    <link href="../template/css/devibeans.min.css" rel="stylesheet" />
+    <!--Extras - novas classes para facilitar-->
+    <link rel="stylesheet" href="../template/css/extras.css" />
+    <link href="../template/css/sncload.css" rel="stylesheet" />
+    <link href="../template/css/magnific-popup.css" rel="stylesheet" />
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <!-- css necessario para o print -->
+    <link
+      href="../template/css/fa/css/font-awesome.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet" />
+    <link
+      href="../template/fonts/roboto.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    onLoad="Javascript:document.getElementById('sncloader').style.display='none';"
+  >
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo" />
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id="sncloader" class="over-loader">
+      <div class="over-cell">
+        <div id="sncload"></div>
+      </div>
+    </div>
+    <header id="topo" class="senac no-print">
+      <div class="header-tecnicos container">
+        <h1 id="nome-curso">Design de interiores</h1>
+        <div id="logo-senac">
+          <img src="../template/images/logo-senac.png" alt="logo do senac" />
+        </div>
+      </div>
+      <div id="sombra"></div>
+    </header>
+    <div id="booklet" class="">
+      <header class="no-print container margem-botao">
+        <!-- BTO IMPRIMIR -->
+        <div class="grupo-imprimir no-print">
+          <button
+            type="button"
+            data-pdf="true"
+            class="bto-imprimir"
+            name="button"
+          >
+            <span class="fa fa-print"></span> <span>Imprimir</span>
+          </button>
+        </div>
+        <!-- /BTO IMPRIMIR -->
+      </header>
+      <!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+      <section class="paginas">
+        <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+        <div class="pagina">
+          <div class="container">
+            <h2>
+              Digitalização e maquete eletrônica: <i>softwares</i>, modelagem,
+              edição, visualização, documentação e publicação
+            </h2>
+            <p>
+              Em um mundo cada vez mais digital, onde as demandas aumentam
+              rapidamente, o conhecimento e a habilidade em computação gráfica
+              para a elaboração de projetos e modelagem tridimensional de
+              mobiliários tornaram-se primordiais. Além disso, a computação
+              gráfica desempenha um papel fundamental no <i>design</i> de
+              móveis, trazendo uma série de benefícios e vantagens, tais como a
+              visualização prévia do mobiliário, testes de funcionalidade,
+              agilidade na produção e apresentações realistas.
+            </p>
+
+            <div class="no-print" aria-hidden="true">
+              <p>
+                Clique na tela do computador e conheça os principais softwares
+                utilizados para projetos de mobiliário.
+              </p>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#autoCADModal"
+              >
+                AutoCAD
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#promobModal"
+              >
+                Promob
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#sketchUpModal"
+              >
+                SketchUp
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#revitModal"
+              >
+                Revit
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#3dsMaxModal"
+              >
+                3ds Max
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#inventorModal"
+              >
+                inventor
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#solidWorksModal"
+              >
+                SolidWorks
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#vDMaxModal"
+              >
+                VDMax
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#blenderModal"
+              >
+                Blender
+              </button>
+
+              <div
+                class="modal fade"
+                id="autoCADModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="autoCADModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="autoCADModalLabel">
+                        AutoCAD
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Um dos <i>softwares</i> mais populares do mundo, o
+                        AutoCAD, criado pela Autodesk, é amplamente utilizado
+                        para a elaboração de desenhos técnicos bidimensionais
+                        (2D) e modelagem 3D (tridimensional).
+                      </p>
+                      <p>
+                        É indicado para a criação de móveis assinados que exigem
+                        uma modelagem mais personalizada, visto que é um
+                        <i>software</i> paramétrico, o que possibilita a criação
+                        de projetos com características distintas. O AutoCAD
+                        pode gerar objetos tridimensionais a partir de esboços
+                        2D ou por meio de ferramentas próprias para criação de
+                        sólidos 3D. Ele apresenta inúmeras ferramentas para
+                        edição e refinamento das formas, possibilitando uma
+                        modelagem bastante precisa.
+                      </p>
+                      <p>
+                        O AutoCAD tem um ambiente próprio para a elaboração de
+                        documentação técnica e dispõe de recursos para
+                        iluminação e aplicação de texturas para geração de
+                        imagens realísticas do projeto (<i>render</i>). Ele gera
+                        arquivos nos mais variados formatos e é amplamente
+                        compatível com outros <i>softwares</i> gráficos.
+                      </p>
+                      <img
+                        src="imgs/Imagem 1 - AutoCAD 2024.png"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do AutoCAD demonstrando uma modelagem 3D a partir de desenho 2D."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 1 - AutoCAD 2024.png"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 1 - AutoCAD 2024.png"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do AutoCAD<br />Fonte: Autodesk (c2023a)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="promobModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="promobModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="promobModalLabel">Promob</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        É um <i>software</i> 3D, líder no segmento, direcionado
+                        para o mercado de <i>design</i> de interiores e
+                        marcenaria. Tem como grande diferencial uma vasta
+                        biblioteca de módulos tridimensionais prontos,
+                        agilizando bastante o processo de projetar, pois não se
+                        perde tempo modelando. É possível projetar um ambiente
+                        inteiro em poucas horas. As edições dimensionais e a
+                        aplicação de materiais são dadas de forma bastante
+                        intuitiva e simples, além de oferecer ferramentas para
+                        gerenciamento de orçamentos e criação de imagens (foto)
+                        realísticas. O Promob oferece recursos de renderização
+                        básicos, sendo possível criar imagens realistas do
+                        projeto rapidamente usando o renderizador Real Scene.
+                        Outro fator importante é que o Promob tem parceria com
+                        os principais fornecedores da área, permitindo que os
+                        projetos estejam sempre alinhados com o mercado, sendo
+                        uma ótima opção para o mercado de móveis sob medida.
+                      </p>
+                      <p>
+                        O Promob é uma ferramenta que oferece recursos para
+                        gerar documentos técnicos que ajudam na implementação de
+                        projetos. Entre os recursos estão detalhamento, lista de
+                        peças, memorial de materiais e desenho técnico. É
+                        possível também exportar documentos em formatos como PDF
+                        (<i>portable document format</i>) ou imagens para
+                        compartilhamento.
+                      </p>
+                      <img
+                        src="imgs/Imagem 2 - Promob.png"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do AutoCAD demonstrando uma modelagem 3D a partir de desenho 2D."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 2 - Promob.png"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 2 - Promob.png"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do Promob<br />Fonte: Promob (s. d.)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="sketchUpModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="sketchUpModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="sketchUpModalLabel">
+                        SketchUp
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        <i>Software</i> de arquitetura e modelagem 3D com
+                        diversas funcionalidades para o <i>design</i> de
+                        interiores. O SketchUp oferece uma ampla gama de
+                        ferramentas de modelagem que permitem aos usuários criar
+                        formas e objetos 3D intuitivamente usando operações
+                        simples, como empurrar/puxar, cortar, colar e mover.
+                        Nele, é possível também acessar o 3D Warehouse, que tem
+                        uma vasta biblioteca de componentes pré-fabricados,
+                        incluindo móveis prontos, facilitando a inserção de
+                        elementos realistas em seus projetos. O SketchUp é uma
+                        ferramenta de modelagem 3D e não inclui um mecanismo de
+                        renderização nativo avançado. No entanto, é possível
+                        realizar renderizações básicas diretamente no SketchUp
+                        usando a função de <i>render</i> padrão do
+                        <i>software</i>, que é chamada de SketchUp Render. Outra
+                        característica interessante é a compatibilidade com o
+                        <i>plug-in</i> V-Ray, podendo ser integrado diretamente
+                        ao SketchUp, tornando-o uma extensão do <i>software</i>.
+                        A integração é geralmente feita com a instalação do
+                        <i>plug-in</i> V-Ray for SketchUp, que permite que você
+                        acesse os recursos do V-Ray diretamente dentro do
+                        ambiente de trabalho do SketchUp, gerando imagens com um
+                        fotorrealismo impressionante.
+                      </p>
+                      <p>
+                        O SketchUp oferece recursos para auxiliar na geração de
+                        documentação técnica referente à criação de desenhos
+                        técnicos, detalhamentos e outros documentos essenciais
+                        para o <i>design</i> de móveis.
+                      </p>
+                      <p>
+                        Você pode exportar suas cenas ou vistas do SketchUp como
+                        imagens (JPG – Joint Pictures Expert Group, PNG –
+                        <i>portable network graphic</i>) ou documentos em PDF.
+                        Isso é útil para criar pranchas de apresentação, que
+                        podem ser compartilhadas digitalmente ou impressas. Além
+                        de imagens e PDFs, você também pode exportar seu modelo
+                        do SketchUp para outros formatos, como DWG (<i
+                          >drawing format</i
+                        >), DXF (<i>rawing exchange format</i>), OBJ (<i
+                          >object file</i
+                        >) e muitos outros, dependendo das necessidades do
+                        projeto e dos requisitos de compartilhamento com outras
+                        ferramentas de <i>design</i> ou CAD.
+                      </p>
+                      <img
+                        src="imgs/Imagem 3 - SketchUp.png"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do software SketchUp mostrando um balcão com duas portas e vão aberto centralizado e quatro pés."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 3 - SketchUp.png"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 3 - SketchUp.png"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do SketchUp<br />Fonte: Leo (2020)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="revitModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="revitModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="revitModalLabel">Revit</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        O Autodesk Revit é uma poderosa plataforma de
+                        <i>software</i> que revolucionou a forma como os
+                        projetos de construção são concebidos, executados e
+                        gerenciados. Ele se destaca como uma solução líder no
+                        setor, oferecendo recursos abrangentes para criação de
+                        modelos BIM (<i>building information modeling</i>, ou,
+                        em tradução livre, "modelagem da informação da
+                        construção") detalhados e precisos que abrangem todas as
+                        fases do ciclo de vida de um projeto de construção.
+                      </p>
+                      <p>
+                        O Revit permite a criação de modelos 3D detalhados que
+                        incorporam informações de construção, como geometria,
+                        materiais e muito mais. Além disso, ele oferece uma
+                        variedade de ferramentas de criação e modificação, como
+                        mover, copiar, girar, espelhar e alinhar, que permitem
+                        fazer ajustes precisos em elementos e objetos no modelo.
+                        Os usuários podem criar e personalizar famílias de
+                        objetos, como móveis ou conjuntos de elementos
+                        paramétricos com características semelhantes, para
+                        atender às necessidades específicas do projeto de forma
+                        mais ágil.
+                      </p>
+                      <p>
+                        Com recursos avançados de renderização e visualização, o
+                        <i>software</i> pode criar imagens fotorrealistas e
+                        apresentações atraentes para apresentação de projetos
+                        aos clientes.
+                      </p>
+                      <p>
+                        Ele gera documentação completa e de forma automática,
+                        como desenhos 2D, elevações, cortes e detalhes a partir
+                        do modelo 3D, economizando tempo e minimizando erros em
+                        documentação técnica.
+                      </p>
+                      <p>
+                        Para compartilhar informações com outros profissionais
+                        envolvidos no projeto, você pode exportar arquivos, como
+                        DWG e outros formatos, a partir do Revit.
+                      </p>
+                      <img
+                        src="imgs/Imagem 4 - Revit.jpg"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do software SketchUp mostrando um balcão com duas portas e vão aberto centralizado e quatro pés."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 4 - Revit.jpg"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 4 - Revit.jpg"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do Revit<br />Fonte: Free3D (2019)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="3dsMaxModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="3dsMaxModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="3dsMaxModalLabel">3ds Max</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        O 3ds Max é um dos principais <i>softwares</i> de
+                        modelagem e animação 3D do mercado. Desenvolvido pela
+                        Autodesk, é uma ferramenta versátil amplamente utilizada
+                        por artistas 3D, <i>designers</i> e arquitetos para
+                        criar imagens, animações, ambientes e objetos 3D de alta
+                        qualidade. O <i>software</i> permite a criação de
+                        modelos 3D complexos e detalhados, incluindo objetos
+                        variados, móveis e ambientes. Ele suporta modelagem
+                        paramétrica, na qual os modelos podem ser ajustados e
+                        editados facilmente usando parâmetros predefinidos.
+                      </p>
+                      <p>
+                        Você pode aplicar materiais realistas em modelos 3D,
+                        pois o 3ds Max suporta mapas de textura para obter
+                        efeitos visuais impressionantes. O
+                        <i>software</i> oferece ainda uma variedade de opções de
+                        iluminação, incluindo iluminação global, luzes
+                        volumétricas e sombreamentos avançados para criar
+                        imagens super-realistas. O Autodesk 3ds Max oferece
+                        suporte a vários <i>softwares</i> de renderização, como
+                        o Mental Ray e o V-Ray, permitindo que os usuários
+                        escolham o renderizador de sua preferência.
+                      </p>
+                      <p>
+                        O 3ds Max permite documentar informações detalhadas
+                        sobre os materiais e modelos 3D usados em um projeto.
+                        Isso inclui texturas, cores e propriedades físicas,
+                        podendo exportar esses modelos para outros aplicativos
+                        de CAD para criar documentação técnica mais precisa.
+                      </p>
+                      <img
+                        src="imgs/Imagem 5 - 3ds Max.jpg"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do 3ds Max apresentando quatro vistas de um automóvel."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 5 - 3ds Max.jpg"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 5 - 3ds Max.jpg"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do 3ds Max<br />Fonte: Autodesk (c2023b)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="inventorModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="inventorModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="inventorModalLabel">
+                        Inventor
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        O Autodesk Inventor é um <i>software</i> de modelagem
+                        paramétrica e CAD (<i>computer-aided design</i>)
+                        amplamente utilizado para projetar, simular e visualizar
+                        produtos e peças em 3D. Suas funcionalidades são ideais
+                        para a modelagem de mobiliários autorais. Desenvolvido
+                        pela Autodesk, o Inventor é uma poderosa ferramenta para
+                        engenheiros, <i>designers</i> e fabricantes que desejam
+                        criar protótipos virtuais de produtos antes de sua
+                        produção física. Você pode criar montagens nas quais
+                        várias peças interagem e se encaixam de forma precisa. O
+                        <i>software</i>
+                        oferece recursos de restrição e movimento para simular o
+                        comportamento das montagens. O Inventor inclui
+                        ferramentas de simulação para testar o desempenho e o
+                        comportamento de seus projetos. Isso inclui análises de
+                        tensão, dinâmica de movimento, simulação de carga, entre
+                        outras.
+                      </p>
+                      <p>
+                        O <i>software</i> permite criar visualizações realistas
+                        de seus projetos, com opções avançadas de renderização
+                        para produzir imagens fotorrealistas. Ele simplifica a
+                        criação de documentação técnica, incluindo desenhos 2D
+                        detalhados, listas de materiais e outros documentos
+                        necessários para a fabricação e montagem.
+                      </p>
+                      <img
+                        src="imgs/Imagem 6 - Inventor.jpg"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do Inventor com uma peça de mobiliário."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 6 - Inventor.jpg"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 6 - Inventor.jpg"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do Inventor<br />Fonte: Graitec (c2023)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="solidWorksModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="solidWorksModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="solidWorksModalLabel">
+                        SolidWorks
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        O SolidWorks é um renomado <i>software</i> de
+                        <i>design</i> e engenharia assistido por computador
+                        (CAD) amplamente utilizado por engenheiros, projetistas
+                        e profissionais da indústria em todo o mundo.
+                        Desenvolvido pela Dassault Systèmes, o SolidWorks é
+                        conhecido por sua poderosa capacidade de modelagem 3D e
+                        suas ferramentas abrangentes para auxiliar no projeto,
+                        na análise e na documentação de produtos e sistemas
+                        complexos. Suas funcionalidades são ideais para a
+                        modelagem de mobiliários autorais, sendo uma ferramenta
+                        essencial para profissionais de <i>design</i> que
+                        desejam criar produtos de alta qualidade de forma
+                        eficiente e realizar análises detalhadas.
+                      </p>
+                      <p>
+                        O SolidWorks permite criar modelos tridimensionais
+                        detalhados de peças e montagens, facilitando a
+                        visualização e a análise de produtos em um ambiente
+                        virtual. Os usuários podem montar componentes de maneira
+                        precisa e eficiente, simular a operação de montagens
+                        complexas e identificar possíveis interferências. O
+                        <i>software</i> oferece ferramentas de análise de
+                        elementos finitos (FEA) e dinâmica de fluidos
+                        computacional (CFD) para avaliar o desempenho e o
+                        comportamento dos projetos em condições reais de uso.
+                        Ele inclui uma ampla variedade de bibliotecas de peças,
+                        economizando tempo no processo de projeto.
+                      </p>
+                      <p>
+                        O SolidWorks cria renderizações realistas dos projetos,
+                        facilitando a comunicação de ideias e conceitos com
+                        equipes, clientes e partes interessadas.
+                      </p>
+                      <p>
+                        Conta ainda com geração automática de desenhos 2D, lista
+                        de materiais, documentação de montagem e outras
+                        informações essenciais para a fabricação e produção.
+                      </p>
+                      <p>
+                        O <i>software</i> é conhecido por sua capacidade de
+                        integração com outros programas, como o
+                        <i>software</i> de gerenciamento de ciclo de vida do
+                        produto (PLM) e o <i>software</i> de fabricação
+                        assistida por computador (CAM).
+                      </p>
+                      <img
+                        src="imgs/Imagem 7 - Solidworks.jpg"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do SolidWorks com um balcão com quatro gavetas e duas portas."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 7 - Solidworks.jpg"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 7 - Solidworks.jpg"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do SolidWorks<br />Fonte: Ibermática (c2023)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="vDMaxModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="vDMaxModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="vDMaxModalLabel">VDMax</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        O VDMax é uma solução gráfica especializada para
+                        profissionais da arquitetura, marcenaria e
+                        <i>design</i> de interiores, que permite que eles criem
+                        projetos de alta qualidade, comuniquem suas ideias de
+                        forma eficaz e otimizem o processo de <i>design</i> e
+                        manufatura. O <i>software</i> oferece uma ampla
+                        variedade de bibliotecas de objetos, móveis e materiais
+                        totalmente editáveis, economizando tempo no processo de
+                        <i>design</i> e modelagem, sendo ideal para o mercado de
+                        móveis sob medida.
+                      </p>
+                      <p>
+                        O VDMax permite que os usuários controlem a iluminação
+                        do modelo 3D. Isso inclui a definição das luzes internas
+                        e externas e a escolha de tipos de iluminação. O
+                        <i>software</i> permite que os usuários renderizem
+                        várias imagens em lote, economizando tempo ao processar
+                        várias vistas ou cenas do projeto.
+                      </p>
+                      <p>
+                        O <i>software</i> disponibiliza a criação de plantas
+                        baixas, cortes e detalhes automaticamente a partir do
+                        modelo 3D, tornando mais fácil a geração de desenhos
+                        técnicos e documentação para a construção.
+                      </p>
+                      <img
+                        src="imgs/Imagem 8 - VDMAX.jpg"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do VDMAX apresentando paredes e medidas."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 8 - VDMAX.jpg"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 8 - VDMAX.jpg"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do VDMax<br />Fonte: VDMax 3D (s. d.)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="blenderModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="blenderModalLabel"
+                aria-live="polite"
+                aria-atomic="true"
+                aria-hidden="false"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="blenderModalLabel">
+                        Blender
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        O Blender é um poderoso <i>software</i> dedicado à
+                        criação e modelagem 3D. Amplamente utilizado por
+                        artistas 3D, animadores e <i>designers</i>, o Blender é
+                        conhecido por sua vasta gama de recursos e sua
+                        comunidade ativa de usuários e desenvolvedores. Além
+                        disso, o Blender é um <i>software</i> de código aberto,
+                        o que significa que é gratuito para uso e distribuição.
+                        Isso torna a ferramenta acessível a uma ampla variedade
+                        de profissionais e entusiastas que desejam explorar a
+                        criação de conteúdo 3D, desde modelagem e animação até
+                        renderização e composição.
+                      </p>
+                      <p>
+                        O Blender oferece um conjunto completo de ferramentas de
+                        modelagem 3D que permite que os usuários criem uma
+                        variedade de objetos, personagens, móveis e cenários
+                        tridimensionais com grande detalhe. Isso inclui
+                        modelagem poligonal, escultura digital, modelagem por
+                        subdivisão e muito mais.
+                      </p>
+                      <p>
+                        O <i>software</i> oferece várias opções de texturização
+                        e criação de materiais, permitindo a aplicação de
+                        texturas complexas e materiais realistas em modelos 3D.
+                        O Blender inclui um mecanismo de renderização interno
+                        chamado Cycles, que é capaz de produzir imagens
+                        realistas com sombras, reflexos, texturas e iluminação
+                        avançada. Além disso, o Blender suporta renderização em
+                        tempo real com a <i>engine</i> (termo comumente usado
+                        para indicar “motor gráfico”) Eevee, que é ótima para
+                        pré-visualização de cenas complexas.
+                      </p>
+                      <p>
+                        Um dos principais diferenciais do Blender é sua
+                        capacidade de criar animações complexas. Os usuários
+                        podem animar personagens, objetos e câmeras, abrir e
+                        fechar portas e gavetas, criar animações por
+                        quadro-chave e muito mais. O Blender também suporta
+                        animação de física, como simulações de partículas.
+                      </p>
+                      <p>
+                        O Blender não é tradicionalmente usado para gerar
+                        detalhamento técnico no sentido convencional, como a
+                        criação de desenhos técnicos 2D com anotações
+                        detalhadas.
+                      </p>
+                      <img
+                        src="imgs/Imagem 9 - Blender.png"
+                        class="center-block img-responsive hidden-sm hidden-xs print"
+                        alt="Descrição ALT: Interface do VDMAX apresentando paredes e medidas."
+                      />
+                      <p
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                      >
+                        Toque na imagem para ampliá-la.
+                      </p>
+                      <a
+                        href="imgs/Imagem 9 - Blender.png"
+                        target="_blank"
+                        class="no-print visible-sm visible-xs"
+                        aria-hidden="true"
+                        ><img
+                          src="imgs/Imagem 9 - Blender.png"
+                          class="center-block img-responsive"
+                      /></a>
+                      <p class="legenda-imagem">
+                        Interface do Blender<br />Fonte: Blender (2022)
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="acessivel print">
+              <h4>AutoCAD</h4>
+              <p>
+                Um dos <i>softwares</i> mais populares do mundo, o AutoCAD,
+                criado pela Autodesk, é amplamente utilizado para a elaboração
+                de desenhos técnicos bidimensionais (2D) e modelagem 3D
+                (tridimensional).
+              </p>
+              <p>
+                É indicado para a criação de móveis assinados que exigem uma
+                modelagem mais personalizada, visto que é um
+                <i>software</i> paramétrico, o que possibilita a criação de
+                projetos com características distintas. O AutoCAD pode gerar
+                objetos tridimensionais a partir de esboços 2D ou por meio de
+                ferramentas próprias para criação de sólidos 3D. Ele apresenta
+                inúmeras ferramentas para edição e refinamento das formas,
+                possibilitando uma modelagem bastante precisa.
+              </p>
+              <p>
+                O AutoCAD tem um ambiente próprio para a elaboração de
+                documentação técnica e dispõe de recursos para iluminação e
+                aplicação de texturas para geração de imagens realísticas do
+                projeto (<i>render</i>). Ele gera arquivos nos mais variados
+                formatos e é amplamente compatível com outros
+                <i>softwares</i> gráficos.
+              </p>
+              <img
+                src="imgs/Imagem 1 - AutoCAD 2024.png"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do AutoCAD demonstrando uma modelagem 3D a partir de desenho 2D."
+              />
+              <p class="legenda-imagem">
+                Interface do AutoCAD<br />Fonte: Autodesk (c2023a)
+              </p>
+              <h4>Promob</h4>
+              <p>
+                É um <i>software</i> 3D, líder no segmento, direcionado para o
+                mercado de <i>design</i> de interiores e marcenaria. Tem como
+                grande diferencial uma vasta biblioteca de módulos
+                tridimensionais prontos, agilizando bastante o processo de
+                projetar, pois não se perde tempo modelando. É possível projetar
+                um ambiente inteiro em poucas horas. As edições dimensionais e a
+                aplicação de materiais são dadas de forma bastante intuitiva e
+                simples, além de oferecer ferramentas para gerenciamento de
+                orçamentos e criação de imagens (foto) realísticas. O Promob
+                oferece recursos de renderização básicos, sendo possível criar
+                imagens realistas do projeto rapidamente usando o renderizador
+                Real Scene. Outro fator importante é que o Promob tem parceria
+                com os principais fornecedores da área, permitindo que os
+                projetos estejam sempre alinhados com o mercado, sendo uma ótima
+                opção para o mercado de móveis sob medida.
+              </p>
+              <p>
+                O Promob é uma ferramenta que oferece recursos para gerar
+                documentos técnicos que ajudam na implementação de projetos.
+                Entre os recursos estão detalhamento, lista de peças, memorial
+                de materiais e desenho técnico. É possível também exportar
+                documentos em formatos como PDF (<i>portable document format</i
+                >) ou imagens para compartilhamento.
+              </p>
+              <img
+                src="imgs/Imagem 2 - Promob.png"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do AutoCAD demonstrando uma modelagem 3D a partir de desenho 2D."
+              />
+              <p class="legenda-imagem">
+                Interface do Promob<br />Fonte: Promob (s. d.)
+              </p>
+              <h4>SketchUp</h4>
+              <p>
+                <i>Software</i> de arquitetura e modelagem 3D com diversas
+                funcionalidades para o <i>design</i> de interiores. O SketchUp
+                oferece uma ampla gama de ferramentas de modelagem que permitem
+                aos usuários criar formas e objetos 3D intuitivamente usando
+                operações simples, como empurrar/puxar, cortar, colar e mover.
+                Nele, é possível também acessar o 3D Warehouse, que tem uma
+                vasta biblioteca de componentes pré-fabricados, incluindo móveis
+                prontos, facilitando a inserção de elementos realistas em seus
+                projetos. O SketchUp é uma ferramenta de modelagem 3D e não
+                inclui um mecanismo de renderização nativo avançado. No entanto,
+                é possível realizar renderizações básicas diretamente no
+                SketchUp usando a função de <i>render</i> padrão do
+                <i>software</i>, que é chamada de SketchUp Render. Outra
+                característica interessante é a compatibilidade com o
+                <i>plug-in</i> V-Ray, podendo ser integrado diretamente ao
+                SketchUp, tornando-o uma extensão do <i>software</i>. A
+                integração é geralmente feita com a instalação do
+                <i>plug-in</i> V-Ray for SketchUp, que permite que você acesse
+                os recursos do V-Ray diretamente dentro do ambiente de trabalho
+                do SketchUp, gerando imagens com um fotorrealismo
+                impressionante.
+              </p>
+              <p>
+                O SketchUp oferece recursos para auxiliar na geração de
+                documentação técnica referente à criação de desenhos técnicos,
+                detalhamentos e outros documentos essenciais para o
+                <i>design</i> de móveis.
+              </p>
+              <p>
+                Você pode exportar suas cenas ou vistas do SketchUp como imagens
+                (JPG – Joint Pictures Expert Group, PNG –
+                <i>portable network graphic</i>) ou documentos em PDF. Isso é
+                útil para criar pranchas de apresentação, que podem ser
+                compartilhadas digitalmente ou impressas. Além de imagens e
+                PDFs, você também pode exportar seu modelo do SketchUp para
+                outros formatos, como DWG (<i>drawing format</i>), DXF (<i
+                  >rawing exchange format</i
+                >), OBJ (<i>object file</i>) e muitos outros, dependendo das
+                necessidades do projeto e dos requisitos de compartilhamento com
+                outras ferramentas de <i>design</i> ou CAD.
+              </p>
+              <img
+                src="imgs/Imagem 3 - SketchUp.png"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do software SketchUp mostrando um balcão com duas portas e vão aberto centralizado e quatro pés."
+              />
+              <p class="legenda-imagem">
+                Interface do SketchUp<br />Fonte: Leo (2020)
+              </p>
+
+              <h4>Revit</h4>
+              <p>
+                O Autodesk Revit é uma poderosa plataforma de
+                <i>software</i> que revolucionou a forma como os projetos de
+                construção são concebidos, executados e gerenciados. Ele se
+                destaca como uma solução líder no setor, oferecendo recursos
+                abrangentes para criação de modelos BIM (<i
+                  >building information modeling</i
+                >, ou, em tradução livre, "modelagem da informação da
+                construção") detalhados e precisos que abrangem todas as fases
+                do ciclo de vida de um projeto de construção.
+              </p>
+              <p>
+                O Revit permite a criação de modelos 3D detalhados que
+                incorporam informações de construção, como geometria, materiais
+                e muito mais. Além disso, ele oferece uma variedade de
+                ferramentas de criação e modificação, como mover, copiar, girar,
+                espelhar e alinhar, que permitem fazer ajustes precisos em
+                elementos e objetos no modelo. Os usuários podem criar e
+                personalizar famílias de objetos, como móveis ou conjuntos de
+                elementos paramétricos com características semelhantes, para
+                atender às necessidades específicas do projeto de forma mais
+                ágil.
+              </p>
+              <p>
+                Com recursos avançados de renderização e visualização, o
+                <i>software</i> pode criar imagens fotorrealistas e
+                apresentações atraentes para apresentação de projetos aos
+                clientes.
+              </p>
+              <p>
+                Ele gera documentação completa e de forma automática, como
+                desenhos 2D, elevações, cortes e detalhes a partir do modelo 3D,
+                economizando tempo e minimizando erros em documentação técnica.
+              </p>
+              <p>
+                Para compartilhar informações com outros profissionais
+                envolvidos no projeto, você pode exportar arquivos, como DWG e
+                outros formatos, a partir do Revit.
+              </p>
+              <img
+                src="imgs/Imagem 4 - Revit.jpg"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do software SketchUp mostrando um balcão com duas portas e vão aberto centralizado e quatro pés."
+              />
+              <p class="legenda-imagem">
+                Interface do Revit<br />Fonte: Free3D (2019)
+              </p>
+              <h4>3ds Max</h4>
+              <p>
+                O 3ds Max é um dos principais <i>softwares</i> de modelagem e
+                animação 3D do mercado. Desenvolvido pela Autodesk, é uma
+                ferramenta versátil amplamente utilizada por artistas 3D,
+                <i>designers</i> e arquitetos para criar imagens, animações,
+                ambientes e objetos 3D de alta qualidade. O
+                <i>software</i> permite a criação de modelos 3D complexos e
+                detalhados, incluindo objetos variados, móveis e ambientes. Ele
+                suporta modelagem paramétrica, na qual os modelos podem ser
+                ajustados e editados facilmente usando parâmetros predefinidos.
+              </p>
+              <p>
+                Você pode aplicar materiais realistas em modelos 3D, pois o 3ds
+                Max suporta mapas de textura para obter efeitos visuais
+                impressionantes. O
+                <i>software</i> oferece ainda uma variedade de opções de
+                iluminação, incluindo iluminação global, luzes volumétricas e
+                sombreamentos avançados para criar imagens super-realistas. O
+                Autodesk 3ds Max oferece suporte a vários <i>softwares</i> de
+                renderização, como o Mental Ray e o V-Ray, permitindo que os
+                usuários escolham o renderizador de sua preferência.
+              </p>
+              <p>
+                O 3ds Max permite documentar informações detalhadas sobre os
+                materiais e modelos 3D usados em um projeto. Isso inclui
+                texturas, cores e propriedades físicas, podendo exportar esses
+                modelos para outros aplicativos de CAD para criar documentação
+                técnica mais precisa.
+              </p>
+              <img
+                src="imgs/Imagem 5 - 3ds Max.jpg"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do 3ds Max apresentando quatro vistas de um automóvel."
+              />
+              <p class="legenda-imagem">
+                Interface do 3ds Max<br />Fonte: Autodesk (c2023b)
+              </p>
+              <h4>Inventor</h4>
+              <p>
+                O Autodesk Inventor é um <i>software</i> de modelagem
+                paramétrica e CAD (<i>computer-aided design</i>) amplamente
+                utilizado para projetar, simular e visualizar produtos e peças
+                em 3D. Suas funcionalidades são ideais para a modelagem de
+                mobiliários autorais. Desenvolvido pela Autodesk, o Inventor é
+                uma poderosa ferramenta para engenheiros, <i>designers</i> e
+                fabricantes que desejam criar protótipos virtuais de produtos
+                antes de sua produção física. Você pode criar montagens nas
+                quais várias peças interagem e se encaixam de forma precisa. O
+                <i>software</i>
+                oferece recursos de restrição e movimento para simular o
+                comportamento das montagens. O Inventor inclui ferramentas de
+                simulação para testar o desempenho e o comportamento de seus
+                projetos. Isso inclui análises de tensão, dinâmica de movimento,
+                simulação de carga, entre outras.
+              </p>
+              <p>
+                O <i>software</i> permite criar visualizações realistas de seus
+                projetos, com opções avançadas de renderização para produzir
+                imagens fotorrealistas. Ele simplifica a criação de documentação
+                técnica, incluindo desenhos 2D detalhados, listas de materiais e
+                outros documentos necessários para a fabricação e montagem.
+              </p>
+              <img
+                src="imgs/Imagem 6 - Inventor.jpg"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do Inventor com uma peça de mobiliário."
+              />
+              <p class="legenda-imagem">
+                Interface do Inventor<br />Fonte: Graitec (c2023)
+              </p>
+              <h4 class="modal-title" id="solidWorksModalLabel">SolidWorks</h4>
+              <p>
+                O SolidWorks é um renomado <i>software</i> de <i>design</i> e
+                engenharia assistido por computador (CAD) amplamente utilizado
+                por engenheiros, projetistas e profissionais da indústria em
+                todo o mundo. Desenvolvido pela Dassault Systèmes, o SolidWorks
+                é conhecido por sua poderosa capacidade de modelagem 3D e suas
+                ferramentas abrangentes para auxiliar no projeto, na análise e
+                na documentação de produtos e sistemas complexos. Suas
+                funcionalidades são ideais para a modelagem de mobiliários
+                autorais, sendo uma ferramenta essencial para profissionais de
+                <i>design</i> que desejam criar produtos de alta qualidade de
+                forma eficiente e realizar análises detalhadas.
+              </p>
+              <p>
+                O SolidWorks permite criar modelos tridimensionais detalhados de
+                peças e montagens, facilitando a visualização e a análise de
+                produtos em um ambiente virtual. Os usuários podem montar
+                componentes de maneira precisa e eficiente, simular a operação
+                de montagens complexas e identificar possíveis interferências. O
+                <i>software</i> oferece ferramentas de análise de elementos
+                finitos (FEA) e dinâmica de fluidos computacional (CFD) para
+                avaliar o desempenho e o comportamento dos projetos em condições
+                reais de uso. Ele inclui uma ampla variedade de bibliotecas de
+                peças, economizando tempo no processo de projeto.
+              </p>
+              <p>
+                O SolidWorks cria renderizações realistas dos projetos,
+                facilitando a comunicação de ideias e conceitos com equipes,
+                clientes e partes interessadas.
+              </p>
+              <p>
+                Conta ainda com geração automática de desenhos 2D, lista de
+                materiais, documentação de montagem e outras informações
+                essenciais para a fabricação e produção.
+              </p>
+              <p>
+                O <i>software</i> é conhecido por sua capacidade de integração
+                com outros programas, como o <i>software</i> de gerenciamento de
+                ciclo de vida do produto (PLM) e o <i>software</i> de fabricação
+                assistida por computador (CAM).
+              </p>
+              <img
+                src="imgs/Imagem 7 - Solidworks.jpg"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do SolidWorks com um balcão com quatro gavetas e duas portas."
+              />
+              <p class="legenda-imagem">
+                Interface do SolidWorks<br />Fonte: Ibermática (c2023)
+              </p>
+              <h4>VDMax</h4>
+              <p>
+                O VDMax é uma solução gráfica especializada para profissionais
+                da arquitetura, marcenaria e
+                <i>design</i> de interiores, que permite que eles criem projetos
+                de alta qualidade, comuniquem suas ideias de forma eficaz e
+                otimizem o processo de <i>design</i> e manufatura. O
+                <i>software</i> oferece uma ampla variedade de bibliotecas de
+                objetos, móveis e materiais totalmente editáveis, economizando
+                tempo no processo de <i>design</i> e modelagem, sendo ideal para
+                o mercado de móveis sob medida.
+              </p>
+              <p>
+                O VDMax permite que os usuários controlem a iluminação do modelo
+                3D. Isso inclui a definição das luzes internas e externas e a
+                escolha de tipos de iluminação. O
+                <i>software</i> permite que os usuários renderizem várias
+                imagens em lote, economizando tempo ao processar várias vistas
+                ou cenas do projeto.
+              </p>
+              <p>
+                O <i>software</i> disponibiliza a criação de plantas baixas,
+                cortes e detalhes automaticamente a partir do modelo 3D,
+                tornando mais fácil a geração de desenhos técnicos e
+                documentação para a construção.
+              </p>
+              <img
+                src="imgs/Imagem 8 - VDMAX.jpg"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do VDMAX apresentando paredes e medidas."
+              />
+              <p class="legenda-imagem">
+                Interface do VDMax<br />Fonte: VDMax 3D (s. d.)
+              </p>
+              <h4>Blender</h4>
+              <p>
+                O Blender é um poderoso <i>software</i> dedicado à criação e
+                modelagem 3D. Amplamente utilizado por artistas 3D, animadores e
+                <i>designers</i>, o Blender é conhecido por sua vasta gama de
+                recursos e sua comunidade ativa de usuários e desenvolvedores.
+                Além disso, o Blender é um <i>software</i> de código aberto, o
+                que significa que é gratuito para uso e distribuição. Isso torna
+                a ferramenta acessível a uma ampla variedade de profissionais e
+                entusiastas que desejam explorar a criação de conteúdo 3D, desde
+                modelagem e animação até renderização e composição.
+              </p>
+              <p>
+                O Blender oferece um conjunto completo de ferramentas de
+                modelagem 3D que permite que os usuários criem uma variedade de
+                objetos, personagens, móveis e cenários tridimensionais com
+                grande detalhe. Isso inclui modelagem poligonal, escultura
+                digital, modelagem por subdivisão e muito mais.
+              </p>
+              <p>
+                O <i>software</i> oferece várias opções de texturização e
+                criação de materiais, permitindo a aplicação de texturas
+                complexas e materiais realistas em modelos 3D. O Blender inclui
+                um mecanismo de renderização interno chamado Cycles, que é capaz
+                de produzir imagens realistas com sombras, reflexos, texturas e
+                iluminação avançada. Além disso, o Blender suporta renderização
+                em tempo real com a <i>engine</i> (termo comumente usado para
+                indicar “motor gráfico”) Eevee, que é ótima para
+                pré-visualização de cenas complexas.
+              </p>
+              <p>
+                Um dos principais diferenciais do Blender é sua capacidade de
+                criar animações complexas. Os usuários podem animar personagens,
+                objetos e câmeras, abrir e fechar portas e gavetas, criar
+                animações por quadro-chave e muito mais. O Blender também
+                suporta animação de física, como simulações de partículas.
+              </p>
+              <p>
+                O Blender não é tradicionalmente usado para gerar detalhamento
+                técnico no sentido convencional, como a criação de desenhos
+                técnicos 2D com anotações detalhadas.
+              </p>
+              <img
+                src="imgs/Imagem 9 - Blender.png"
+                class="center-block img-responsive hidden-sm hidden-xs print"
+                alt="Descrição ALT: Interface do VDMAX apresentando paredes e medidas."
+              />
+              <p class="legenda-imagem">
+                Interface do Blender<br />Fonte: Blender (2022)
+              </p>
+            </div>
+            <h3>Encerramento</h3>
+            <p>
+              Há muitas opções de <i>softwares</i> para utilização em seu
+              projeto, não é mesmo? É importante salientar que, como
+              <i>designer</i> de interiores, você não precisa conhecer
+              profundamente todas essas ferramentas. O importante é encontrar
+              aquela que melhor atende à sua necessidade projetual, buscar
+              aprofundar seus conhecimentos e usar da melhor maneira. Saiba que
+              a melhor ferramenta é aquela que você domina.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+      <footer class="text-center no-print">
+        <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+      </footer>
+    </div>
+
+    <!-- Modais -->
+
+    <!-- Modais 100% -->
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+    <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+    <div class="ico-div-loader">
+      <img src="../template/images/atencao.png" />
+      <img src="../template/images/bg-content.jpg" />
+      <img src="../template/images/bg-topo.jpg" />
+      <img src="../template/images/black-zoom-in-256.png" />
+      <img src="../template/images/concluindo.png" />
+      <img src="../template/images/curtir.png" />
+      <img src="../template/images/desafio.png" />
+      <img src="../template/images/dica.png" />
+      <img src="../template/images/doc.png" />
+      <img src="../template/images/fundamental.png" />
+      <img src="../template/images/icon-03.png" />
+      <img src="../template/images/importante.png" />
+      <img src="../template/images/lightbulb.png" />
+      <img src="../template/images/link.png" />
+      <img src="../template/images/link_pdf_hover.png" />
+      <img src="../template/images/link_pdf_normal.png" />
+      <img src="../template/images/logo-senac.png" />
+      <img src="../template/images/mark-icon.png" />
+      <img src="../template/images/mark-icon02.png" />
+      <img src="../template/images/midia.png" />
+      <img src="../template/images/monitor.png" />
+      <img src="../template/images/nao_curtir.png" />
+      <img src="../template/images/pergunta.png" />
+      <img src="../template/images/pesquisa.png" />
+      <img src="../template/images/play.png" />
+      <img src="../template/images/radio_flat.png" />
+      <img src="../template/images/refletir.png" />
+      <img src="../template/images/saiba_mais.png" />
+      <img src="../template/images/senac_loader.png" />
+      <img src="../template/images/tanamidia.png" />
+      <img src="../template/images/transcricao.png" />
+      <img src="../template/images/transcricao_small.png" />
+      <img src="../template/images/tv.png" />
+      <img src="../template/images/tv_bottom.png" />
+      <img src="../template/images/zoom.png" />
+      <img src="../template/images/zoom_ie.cur" />
+      <img src="../template/images/zoom_ie.png" />
+      <!-- adicionar as imagens customizadas aqui abaixo -->
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../template/js/jquery.min.js"></script>
+    <script src="../template/js/bootstrap.min.js"></script>
+    <script src="../template/js/jquery.magnific-popup.min.js"></script>
+    <script src="../template/js/print.js"></script>
+    <script src="../template/js/template.config.js"></script>
+    <script src="../template/js/images.loader.js"></script>
+    <script src="../template/js/highlight.min.js"></script>
+    <script src="../template/js/parallax.min.js"></script>
+    <noscript>
+      <style media="screen">
+        .over-loader {
+          display: none;
+        }
+      </style>
+    </noscript>
+  </body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    document.querySelectorAll("pre code").forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+  //inicializa zoom na imagem
+  $(".zoom-imagem").magnificPopup({
+    type: "image",
+    mainClass: "mfp-with-zoom", // this class is for CSS animation below
+    zoom: {
+      enabled: true, // By default it's false, so don't forget to enable it
+
+      duration: 300, // duration of the effect, in milliseconds
+      easing: "ease-in-out", // CSS transition easing function
+
+      // The "opener" function should return the element from which popup will be zoomed in
+      // and to which popup will be scaled down
+      // By defailt it looks for an image tag:
+      opener: function (openerElement) {
+        // openerElement is the element on which popup was initialized, in this case its <a> tag
+        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+        return openerElement.is("img")
+          ? openerElement
+          : openerElement.find("img");
+      },
+    },
+    image: {
+      markup:
+        '<div class="mfp-figure">' +
+        '<div class="mfp-close"></div>' +
+        '<div class="mfp-img"></div>' + // Floated left
+        '<div class="mfp-bottom-bar">' +
+        "<figcaption>" +
+        '<div class="mfp-title" style="text-align:center"></div>' +
+        '<div class="mfp-counter"></div>' +
+        "</figcaption>" +
+        "</div>" +
+        "</div>", // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+      cursor: "mfp-zoom-out-cur", // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+      tError: '<a href="%url%">A imagem</a> não pode ser carregada.', // Error message
+    },
+  });
+
+  //inicializa popover
+  $(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+  //inicializa tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += " js";
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function () {
+    var $target = $(".animeStart"),
+      $target2 = $(".animeStop"),
+      targetBox = $(".box"),
+      animationClass = "anime-init",
+      windowHeight = $(window).height(),
+      offset = windowHeight - windowHeight / 4;
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function () {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        }
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function () {
+      animeScroll();
+    });
+  });
+</script>
+
+<script>
+  var scriptElem = document.createElement("script");
+  (scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
+    (scriptElem.charset = "UTF-8"),
+    (scriptElem.onload = function () {
+      window.ht = new HT({
+        token: "bf5b7efb148a829a126a0e0c9fd533bf",
+        align: "top",
+        videoEnabled: true,
+        ytEmbedReplace: true,
+        mobileConfig: {
+          align: "right",
+          actionsAlign: "top",
+          customButtonStyle: {
+            borderRadius: "6px",
+            size: "38px",
+            horizontalMargin: "13px",
+            bottomMargin: "140px",
+            rightMargin: "40px",
+          },
+        },
+      });
+      $(".ht-skip").attr("aria-hidden", "true");
+    }),
+    document.body.appendChild(scriptElem);
+</script>
