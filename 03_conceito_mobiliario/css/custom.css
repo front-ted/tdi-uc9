@@ -8,8 +8,11 @@ header{margin-top: 50px;}
 .bloco{padding: 100px 0;}
 .bloco1{
   background: 
-  url('../imgs/bg_01esq.png') no-repeat left 20px top 20% / 10%,
+  url('../imgs/bg_01esq.png') no-repeat left 20px top 20% / 6%,
   url('../imgs/bg_02dir.png') no-repeat right 20px bottom 20% / 10%;
+}
+.bloco3{
+  background: url('../imgs/bg_03dir.png') no-repeat right 20px bottom 100px / 10%;
 }
 .my-8{margin: 80px auto;}
 .destaque-claro{
@@ -41,7 +44,121 @@ header{margin-top: 50px;}
   align-items: flex-end;
 }
 .painel button{
+  border: none;
+  background: none;
+  padding: 0;
+  position: relative;
+  width: 190px;
+}
+.painel button span{
+  transition: all .4s;
+  width: 190px;
+  border: 3px solid #fff;
+  background: #ef8068;
+  display: block;
+  padding: 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 19px;
+  position: absolute;
+  bottom: 0;
+}
+.painel button:hover span{background: #bd372d;}
+
+.painel .bt-residencial{
+  background: url("../imgs/img_bt_01.png") no-repeat center bottom 100px;
+  height: 245px;
+}
+.painel .bt-corporativo{
+  background: url("../imgs/img_bt_02.png") no-repeat center bottom 100px;
+  height: 425px;
+}
+.painel .bt-comercial{
+  background: url("../imgs/img_bt_03.png") no-repeat center bottom 100px;
+  height: 443px;
+}
+
+.bloco3 h3{color: #2a8080;}
+.ilustra{margin-top: 30px;}
+
+#modal-residencial .modal-body{
+  background: url('../imgs/fig_02dir.png') no-repeat right 30px bottom 10% / 10%, url('../imgs/fig_01esq.png') no-repeat left 20px top 5% / 10%, url('../imgs/bg_modais.png') repeat;
+  background-attachment: fixed;
+}
+.bloco.verde .modal-body *{color: #333;}
+.bloco.verde .modal-body h3{color: #be3d33;}
+.bloco.verde .modal-body .btn{
+  float: right;
+  border: 3px solid #2a8080;
+  color: #2a8080;
+}
+.tab-content{
+  background: #fff;
+  padding: 20px;
+}
+.tab-content p:first-child{
+  margin-top: 0;
+}
+#modal-corporativo .modal-body{
+  background: url('../imgs/fig_04dir.png') no-repeat right 40px center / 5%, url('../imgs/fig_05dir.png') no-repeat left 30px bottom 5% / 10%, url('../imgs/fig_03esq.png') no-repeat left 20px top 5% / 10%, url('../imgs/bg_modais.png') repeat;
+  background-attachment: fixed;
+}
+#modal-comercial .modal-body{
+  background: url('../imgs/fig_07dir.png') no-repeat right 50px bottom 5% / 5%, url('../imgs/fig_06esq.png') no-repeat left 20px top 2% / 10%, url('../imgs/bg_modais.png') repeat;
+  background-attachment: fixed;
+}
+.caixa-destaque-livre.vermelho{
+  background: #bd372d;
+  margin: 50px auto;
+  position: relative;
+}
+.caixa-destaque-livre.vermelho::before{
+  content: "";
+  background: url('../imgs/destaque_01.png') no-repeat;
+  width: 77px;
+  height: 59px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: -30px;
+}
+.caixa-destaque-livre.vermelho::after{
+  content: "";
+  background: url('../imgs/destaque02.png') no-repeat;
+  width: 77px;
+  height: 59px;
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: -30px;
+}
+.bloco.verde .caixa-destaque-livre.vermelho p{color: #fff;}
+.bloco.verde .panel-heading{
+  background: #2a8080 !important;
+  border: none;
+  border-radius: 20px;
   
+}
+.bloco.verde .panel-heading h4{
+  padding: 5px;
+  font-size: 19px;
+}
+.bloco.verde .panel-heading h4 img{
+  width: 35px;
+  margin-right: 10px;
+}
+.bloco.verde .panel-heading a:hover{text-decoration: none;}
+.bloco.verde .panel-heading a b{color: #fff;}
+.bloco.verde .panel{border: none;}
+
+@media screen and (max-width: 950px) {
+  .bloco1, .bloco3{
+    background: none;
+  }
+  #modal-residencial .modal-body, #modal-corporativo .modal-body, #modal-comercial .modal-body{
+    background: url('../imgs/bg_modais.png') repeat;
+    background-attachment: fixed;
+  }
 }
 
 @media screen and (max-width: 700px) {
