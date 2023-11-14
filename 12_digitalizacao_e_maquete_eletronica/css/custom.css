@@ -1,11 +1,102 @@
+body {
+  background-image: url("../imgs/bg.png");
+}
+
 .corpo {
   margin-top: 50px;
+}
+.pagina {
+  background-image: url("../imgs/fig_01dir.png"), url("../imgs/fig_02esq.png");
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  background-size: 200px, 100px;
 }
 
 .margem-botao {
   margin-top: 100px;
 }
 
+.tela {
+  background-image: url("../imgs/figura_tela.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  min-height: 600px;
+  padding-top: 200px;
+}
+
+.row-telas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 50px;
+}
+
+.btn-softwares {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+
+  border: none;
+  height: 117px;
+  width: 87px;
+}
+.linha {
+  display: block;
+}
+
+.btn-softwares:hover {
+  scale: 1.2;
+  transition: 0.5s;
+}
+
+.btn-autoCad {
+  background-image: url("../imgs/icon_01.png");
+}
+
+.btn-promob {
+  background-image: url("../imgs/icon_02.png");
+}
+
+.btn-sketchUp {
+  background-image: url("../imgs/icon_03.png");
+}
+
+.btn-revit {
+  background-image: url("../imgs/icon_04.png");
+}
+
+.btn-3dsMax {
+  background-image: url("../imgs/icon_05.png");
+}
+
+.btn-inventor {
+  background-image: url("../imgs/icon_06.png");
+}
+
+.btn-solidWorks {
+  background-image: url("../imgs/icon_07.png");
+}
+
+.btn-vdMax {
+  background-image: url("../imgs/icon_08.png");
+}
+
+.btn-blender {
+  background-image: url("../imgs/icon_09.png");
+}
+
+.bgModal {
+  background-image: url("../imgs/botao_icon/bg.png");
+}
+
+@media screen and (max-width: 1240px) {
+  .pagina {
+    background-image: none;
+  }
+}
 @media screen and (max-width: 700px) {
   .video-youtube {
     width: 320px;
