@@ -1,0 +1,492 @@
+body {
+  background-color: white;
+}
+
+.margem-botao {
+  margin-top: 100px;
+}
+
+.bloco1 {
+  background-image: url("../imgs/elemento1.png"), url("../imgs/elemento2.png");
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+  background-size: 150px;
+  padding-left: 15px;
+}
+
+.bloco2 {
+  background-color: #9e5147;
+  color: aliceblue;
+}
+.bloco2 h2 {
+  color: aliceblue;
+}
+
+.bloco3 {
+  background-image: url("../imgs/elemento3.png"), url("../imgs/painel.png"),
+    url("../imgs/painel_bg.png"), url("../imgs/painel2.png");
+  background-repeat: no-repeat;
+  background-position: left center, center bottom, 50% 90%, 50% 45%;
+  background-size: 300px, 300px, 380px, 250px;
+  min-height: 850px;
+}
+
+.painel-botoes {
+  position: relative;
+}
+.panel-heading {
+  background-color: #d64c3c !important;
+  border: 2px solid #d64c3c !important;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.botao-propriedade-industrial {
+  background-image: url("../imgs/painel_bt.png");
+  background-color: transparent;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  left: 300px;
+  bottom: -500px;
+}
+.bgModal {
+  background-image: url("../imgs/painel_bg_modal.jpg");
+  background-size: cover;
+}
+
+.headerModal {
+  background-color: #9e5147;
+  color: white;
+}
+
+.btn-modal-close {
+  color: white;
+}
+
+.botao-patentes {
+  background-image: url("../imgs/painel_bt2.png");
+  background-color: transparent;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  left: 300px;
+  top: 310px;
+}
+
+.botao-desenho-industrial {
+  background-image: url("../imgs/painel_bt3.png");
+  background-color: transparent;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  left: 300px;
+  top: 200px;
+}
+
+.botao-registro-marca {
+  background-image: url("../imgs/painel_bt4.png");
+  background-color: transparent;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  left: 450px;
+  top: 140px;
+}
+
+.botao-indicacoes-geograficas {
+  background-image: url("../imgs/painel_bt5.png");
+  background-color: transparent;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  left: 530px;
+  top: 230px;
+}
+
+.botao-repressao-concorrencia-desleal {
+  background-image: url("../imgs/painel_bt6.png");
+  background-color: transparent;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  left: 550px;
+  top: 350px;
+}
+
+.botao-segredo-industrial {
+  background-image: url("../imgs/painel_bt7.png");
+  background-color: transparent;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+  left: 550px;
+  top: 450px;
+}
+
+.accordion-patentes {
+  background-color: transparent !important;
+  border: none !important;
+  background-image: url("../imgs/00.png");
+  background-repeat: no-repeat;
+  background-position: 72% center;
+}
+
+.accordion-patentes .panel-title {
+  color: black;
+}
+
+.accordion-patentes-tecnologia .panel-body {
+  background-color: transparent;
+}
+
+.panel-expanded .panel-title {
+  color: black;
+  text-decoration: none;
+}
+
+.panel-expanded {
+  background-color: white !important;
+  color: black;
+  transition: 0.5s;
+}
+
+.panel {
+  background-color: transparent;
+}
+
+.panel-body {
+  background-color: #9e5147;
+}
+
+.panel-body-patentes {
+  background-color: transparent;
+}
+
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+}
+
+.panel-title {
+  color: white;
+  text-decoration: none;
+}
+
+.panel-title:hover a {
+  text-decoration: none;
+  color: black;
+}
+
+.panel .panel-default {
+  background-color: transparent;
+}
+
+.panel-group {
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+.panel {
+  border: none;
+}
+
+.panel.panel-default > .panel-heading {
+  background-color: black;
+}
+
+.citacao-lei {
+  margin-left: 50%;
+}
+
+.citacao-lei p {
+  text-align: justify;
+  font-size: small;
+}
+
+.chaleiras {
+  max-width: 300px;
+}
+.esfera {
+  max-width: 300px;
+}
+
+.elemento2 {
+  margin-top: 50px;
+}
+
+.bloco4 {
+  background-color: #9e5147;
+  color: white;
+}
+
+.bloco4 h3 {
+  color: white;
+}
+
+@media screen and (max-width: 1250px) {
+  .bloco1 {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bloco3 {
+    background-image: url("../imgs/painel.png"), url("../imgs/painel_bg.png"),
+      url("../imgs/painel2.png");
+    background-repeat: no-repeat;
+    background-position: center bottom, 50% 90%, 50% 45%;
+    background-size: 300px, 380px, 250px;
+    min-height: 850px;
+  }
+
+  .botao-propriedade-industrial {
+    position: absolute;
+    left: 200px;
+    bottom: -500px;
+  }
+
+  .botao-patentes {
+    left: 150px;
+    top: 310px;
+  }
+
+  .botao-desenho-industrial {
+    left: 180px;
+    top: 200px;
+  }
+
+  .botao-registro-marca {
+    left: 300px;
+    top: 140px;
+  }
+
+  .botao-indicacoes-geograficas {
+    left: 400px;
+    top: 230px;
+  }
+
+  .botao-repressao-concorrencia-desleal {
+    left: 400px;
+    top: 350px;
+  }
+
+  .botao-segredo-industrial {
+    left: 430px;
+    top: 450px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .botao-propriedade-industrial {
+    position: absolute;
+    left: 150px;
+    bottom: -500px;
+  }
+
+  .botao-patentes {
+    left: 150px;
+    top: 310px;
+  }
+
+  .botao-desenho-industrial {
+    left: 180px;
+    top: 200px;
+  }
+
+  .botao-registro-marca {
+    left: 300px;
+    top: 140px;
+  }
+
+  .botao-indicacoes-geograficas {
+    left: 350px;
+    top: 230px;
+  }
+
+  .botao-repressao-concorrencia-desleal {
+    left: 400px;
+    top: 350px;
+  }
+
+  .botao-segredo-industrial {
+    left: 380px;
+    top: 450px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .botao-propriedade-industrial {
+    position: absolute;
+    left: 100px;
+    bottom: -500px;
+  }
+
+  .botao-patentes {
+    left: 100px;
+    top: 310px;
+  }
+
+  .botao-desenho-industrial {
+    left: 130px;
+    top: 200px;
+  }
+
+  .botao-registro-marca {
+    left: 250px;
+    top: 140px;
+  }
+
+  .botao-indicacoes-geograficas {
+    left: 300px;
+    top: 230px;
+  }
+
+  .botao-repressao-concorrencia-desleal {
+    left: 350px;
+    top: 350px;
+  }
+
+  .botao-segredo-industrial {
+    left: 330px;
+    top: 450px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .botao-propriedade-industrial {
+    position: absolute;
+    left: 50px;
+    bottom: -500px;
+  }
+
+  .botao-patentes {
+    left: 50px;
+    top: 310px;
+  }
+
+  .botao-desenho-industrial {
+    left: 80px;
+    top: 200px;
+  }
+
+  .botao-registro-marca {
+    left: 200px;
+    top: 140px;
+  }
+
+  .botao-indicacoes-geograficas {
+    left: 250px;
+    top: 230px;
+  }
+
+  .botao-repressao-concorrencia-desleal {
+    left: 300px;
+    top: 350px;
+  }
+
+  .botao-segredo-industrial {
+    left: 280px;
+    top: 450px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .video-youtube {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .botao-propriedade-industrial {
+    position: absolute;
+    left: 20px;
+    bottom: -500px;
+  }
+
+  .botao-patentes {
+    left: 30px;
+    top: 310px;
+  }
+
+  .botao-desenho-industrial {
+    left: 50px;
+    top: 200px;
+  }
+
+  .botao-registro-marca {
+    left: 200px;
+    top: 140px;
+  }
+
+  .botao-indicacoes-geograficas {
+    left: 250px;
+    top: 230px;
+  }
+
+  .botao-repressao-concorrencia-desleal {
+    left: 300px;
+    top: 350px;
+  }
+
+  .botao-segredo-industrial {
+    left: 230px;
+    top: 450px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .botao-propriedade-industrial {
+    position: absolute;
+    left: 5px;
+    bottom: -500px;
+  }
+
+  .botao-patentes {
+    left: 5px;
+    top: 310px;
+  }
+
+  .botao-desenho-industrial {
+    left: 10px;
+    top: 200px;
+  }
+
+  .botao-registro-marca {
+    left: 170px;
+    top: 140px;
+  }
+
+  .botao-indicacoes-geograficas {
+    left: 220px;
+    top: 230px;
+  }
+
+  .botao-repressao-concorrencia-desleal {
+    left: 250px;
+    top: 350px;
+  }
+
+  .botao-segredo-industrial {
+    left: 220px;
+    top: 450px;
+  }
+}
