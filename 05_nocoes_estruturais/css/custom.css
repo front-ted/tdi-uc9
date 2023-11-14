@@ -1,11 +1,78 @@
-.corpo {
-  margin-top: 50px;
+body{
+  background: url('../imgs/bg_telainicial.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header{margin-top: 100px;}
+h2, h3, h4{color: #000;}
+.pagina .container.bloco{
+  background: #fff;
+  border-radius: 35px;
+  margin: 30px auto;
+  padding: 20px 50px;
+  box-shadow: -10px 10px 0px -7px rgba(0,0,0,0.65);
+  -webkit-box-shadow: -10px 10px 0px -7px rgba(0,0,0,0.65);
+  -moz-box-shadow: -10px 10px 0px -7px rgba(0,0,0,0.65);
+}
+.painel{
+  display: flex;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.painel button{
+  transition: all .4s;
+  border: none;
+  margin-bottom: 20px;
+}
+.bt-sambladuras{
+  width: 306px;
+  height: 169px;
+  background: url('../imgs/bt_sambladuras_1.png') no-repeat center center;
+}
+.bt-sambladuras:hover{background: url('../imgs/bt_sambladuras_hv.png') no-repeat center center;}
+.bt-quimica{
+  width: 185px;
+  height: 345px;
+  background: url('../imgs/bt_quimica.png') no-repeat center center;
+}
+.bt-quimica:hover{background: url('../imgs/bt_quimica_hv.png') no-repeat center center;}
+.bt-mecanica{
+  width: 172px;
+  height: 253px;
+  background: url('../imgs/bt_mecanica_1.png') no-repeat center center;
+}
+.bt-mecanica:hover{background: url('../imgs/bt_mecanica_hv_1.png') no-repeat center center;}
+.texto-branco{color: #fff;}
+
+#modal-sambladuras .modal-content{
+  background: url('../imgs/bg_sambladuras.png') repeat-y center top;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.modal-100 .modal-body > *, .modal-100 .modal-body h4, .modal-100 .modal-body h3{color: #fff;}
+.panel-group h4 a, .panel-group p{color: #000;}
+.panel-body *{color: #000;}
+.modal-body .btn{
+  float: right;
+  border: 3px solid #2a8080;
+  color: #2a8080;
+}
+#modal-fixacao-quimica .modal-content{
+  background: url('../imgs/bg_quimica.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+#modal-fixacao-mecanica .modal-content{
+  background: 
+  url('../imgs/ilustra_direita.png') no-repeat right 40px top 10% / 10%, 
+  url('../imgs/ilustra_esquerda.png') no-repeat left 20px center / 10%, 
+  url('../imgs/bg_mecanica_1.png') repeat-y center top / 100%;
 }
 
-.margem-botao {
-  margin-top: 100px;
+@media screen and (max-width: 1280px){
+  #modal-fixacao-mecanica .modal-content{background: url('../imgs/bg_mecanica_1.png') repeat-y center top / 100%;}
 }
-
 @media screen and (max-width: 700px) {
   .video-youtube {
     width: 320px;
