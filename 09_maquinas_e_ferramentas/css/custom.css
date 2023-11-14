@@ -6,6 +6,112 @@
   margin-top: 100px;
 }
 
+body {
+  background-image: url("../imgs/bg.png");
+}
+
+.btn-principais {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-principais:hover {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.btn-corte {
+  background-image: url("../imgs/bt01_a.png");
+  background-size: cover;
+  width: 365px;
+  height: 268px;
+}
+
+.btn-corte:hover {
+  background-image: url("../imgs/bt01_b.png");
+  transition: 0.2s;
+  height: 300px;
+}
+
+.btn-polimento {
+  background-image: url("../imgs/bt02_a.png");
+  background-size: cover;
+  width: 365px;
+  height: 268px;
+}
+
+.btn-polimento:hover {
+  background-image: url("../imgs/bt02_b.png");
+  transition: 0.2s;
+  height: 300px;
+  width: 400px;
+}
+
+.btn-manuais {
+  background-image: url("../imgs/bt03_a.png");
+  background-size: cover;
+  width: 365px;
+  height: 268px;
+}
+
+.btn-manuais:hover {
+  background-image: url("../imgs/bt03_b.png");
+  transition: 0.2s;
+  height: 300px;
+}
+
+.btn-equipamentos {
+  background-image: url("../imgs/bt04_a.png");
+  background-size: cover;
+  width: 365px;
+  height: 268px;
+}
+
+.btn-equipamentos:hover {
+  background-image: url("../imgs/bt04_b.png");
+  background-size: cover;
+}
+
+.quebra-linha {
+  display: block;
+}
+
+.img-grupos-ferramentas {
+  height: 300px;
+}
+
+.bg-modal {
+  background-image: url("../imgs/botoes/bg_bt.png");
+}
+
+.conteudo-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-ferramentas {
+  font-size: 18px;
+  color: white;
+  height: 46px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e74c3c;
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+.encerramento {
+  background-color: #507f7f;
+  color: white;
+
+  width: 100%;
+}
+.encerramento h3 {
+  color: white;
+}
+
 @media screen and (max-width: 700px) {
   .video-youtube {
     width: 320px;
