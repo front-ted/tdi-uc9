@@ -54,6 +54,19 @@ body {
   left: 300px;
   bottom: -500px;
 }
+.bgModal {
+  background-image: url("../imgs/painel_bg_modal.jpg");
+  background-size: cover;
+}
+
+.headerModal {
+  background-color: #9e5147;
+  color: white;
+}
+
+.btn-modal-close {
+  color: white;
+}
 
 .botao-patentes {
   background-image: url("../imgs/painel_bt2.png");
