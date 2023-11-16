@@ -31,6 +31,10 @@ body {
   min-height: 850px;
 }
 
+.tam-img-modal-normal {
+  height: 237.67px;
+}
+
 .painel-botoes {
   position: relative;
 }
