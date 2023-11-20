@@ -1,10 +1,28 @@
-.corpo {
-  margin-top: 50px;
+body{
+  background: url('../imgs/bg.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
-.margem-botao {
-  margin-top: 100px;
+.pagina{padding-bottom: 50px;}
+header{margin-top: 100px;}
+.pagina .container{
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px 40px;
+  margin-top: 20px;
 }
+h2, h3, h4, h5{color: #000;}
+.bt-objeto{
+  background: url('../imgs/bt.png') no-repeat center center #fff;
+  width: 370px;
+  height: 230px;
+  display: block;
+  margin: 50px auto;
+  border-radius: 20px;
+  border: 15px solid #fff;
+  transition: all .4s;
+}
+.bt-objeto:hover{transform: scale(1.1);}
 
 @media screen and (max-width: 700px) {
   .video-youtube {
