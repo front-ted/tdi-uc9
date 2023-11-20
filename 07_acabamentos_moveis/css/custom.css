@@ -1,1 +1,135 @@
 header{margin-top: 100px;}
+body{background: #fff;}
+p, li{font-family: roboto;}
+.bloco{padding: 50px 0;}
+.bloco1{
+    background: url('../imgs/bg_bloco1.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.texto-inicial{
+    background: #fff;
+    width: 60%;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+h2, h3, h4{color: #000;}
+.bloco2{
+    background: url('../imgs/bg_bloco2.jpg') no-repeat bottom left / 10%;
+    background-attachment: fixed;
+}
+.nav-tabs li:first-child{margin-left: 20px;}
+.nav-tabs li{
+    background: #368081;
+    border: 4px solid #1a4848;
+    border-radius: 10px 10px 0 0;
+    border-bottom:  none;
+    margin-right: 5px;
+}
+.nav-tabs li:hover{background: #fff;}
+.nav-tabs li:hover a{color: #000;}
+
+.nav-tabs li a{color: #fff;}
+.nav-tabs li.active{
+    border-color: #3b807d;
+}
+.nav-tabs li.active a{color: #000;}
+.tab-content{
+    border: 4px solid #368081;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.vantagens, .desvantagens{
+    background: #368081;
+    padding: 20px 40px;
+    position: relative;
+    border-radius: 20px;
+    margin: 80px auto;
+    margin-bottom: 100px;
+    padding-left: 100px;
+}
+.vantagens p, .vantagens li{color: #fff;}
+.vantagens::after{
+    content: "";
+    position: absolute;
+    background: url('../imgs/vantagens.png') no-repeat;
+    width: 136px;
+    height: 457px;
+    top: -20px;
+    left: -80px;
+}
+.vantagens ul, .desvantagens ul{
+    margin-left: 0;
+    padding-left: 20px;
+}
+.desvantagens{
+    background: #cbcbcb;
+    padding-right: 100px;
+}
+.desvantagens p, .desvantagens li, .desvantagens p b{color: #000;}
+.desvantagens::after{
+    content: "";
+    position: absolute;
+    background: url('../imgs/desvantagens.png') no-repeat;
+    width: 139px;
+    height: 457px;
+    top: -20px;
+    right: -80px;
+}
+.bloco3{
+    background: url('../imgs/bg_bloco3.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bloco3 .container{
+    display: flex;
+    justify-content: flex-end;
+}
+.bloco4{
+    background: url('../imgs/bg_bloco4.jpg') no-repeat bottom right / 10%;
+    background-attachment: fixed;
+}
+.bloco5{
+    background: url('../imgs/bg_bloco5_dir2.png') no-repeat right 10px bottom 10px / 10%,  url('../imgs/bg_bloco5_esq.png') no-repeat right 10px top / 10%, url('../imgs/bg_bloco5_dir.png') no-repeat left 10px bottom / 10%;
+    background-color: #1b4949;
+}
+.bloco5 *{color: #fff;}
+#accordion .panel-heading, 
+#accordion2 .panel-heading,
+#accordion3 .panel-heading{
+    border-radius: 10px;
+    background-color: #d84c3d !important;
+    border: 2px solid #d84c3d;
+}
+#accordion .panel-default, 
+#accordion2 .panel-default,
+#accordion3 .panel-default{
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+}
+#accordion .panel-body, 
+#accordion2 .panel-body, 
+#accordion3 .panel-body{
+    border: none;
+    padding: 0 40px;
+}
+#accordion2 .panel-heading a, #accordion3 .panel-heading a{color: #fff;}
+.bloco7{
+    background: url('../imgs/bg_bloco7_esq.png') no-repeat left 10px top / 10%, url('../imgs/bg_bloco7_dir.png') no-repeat right 10px bottom / 10%;
+    background-color: #1b4949;
+}
+.bloco7 *{color: #fff;}
+.bloco8{
+    background: url('../imgs/bg_bloco8.jpg') no-repeat bottom left / 10%;
+    background-attachment: fixed;
+}
+.bloco9{background: #1b4949;}
+.bloco9 *{color: #fff;}
+
+@media screen and (max-width: 1200px){
+    .bloco2, .bloco4, .bloco8{background: none;}
+    .bloco5, .bloco7, .bloco9{background: #1b4949;}
+}
