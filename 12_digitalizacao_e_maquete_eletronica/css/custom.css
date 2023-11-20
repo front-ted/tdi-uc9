@@ -20,18 +20,18 @@ body {
   background-image: url("../imgs/figura_tela.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100%;
-  min-height: 600px;
-  padding-top: 150px;
+  width: 80%;
+  height: 450px;
+  padding-top: 120px;
 }
 
 .row-telas {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  gap: 50px;
 }
 
 .btn-softwares {
@@ -99,34 +99,29 @@ body {
 }
 
 @media screen and (max-width: 990px) {
-  .base-tela {
-    height: 600px;
-  }
-
   .tela {
-    padding-top: 90px;
-  }
-  .btn-softwares {
-    background-size: 80%;
-    height: 100px;
-  }
-  .row-telas {
-    gap: 25px;
+    padding-top: 80px;
   }
 }
 
 @media screen and (max-width: 780px) {
   .tela {
-    padding-top: 120px;
-  }
-  .btn-softwares {
-    background-size: 60%;
-    height: 80px;
-  }
-  .row-telas {
-    gap: 15px;
+    background-image: none;
   }
 }
+
+@media screen and (max-width: 580px) {
+  .linha {
+    display: flex;
+    flex-direction: column;
+  }
+  .tela {
+    height: fit-content;
+  }
+}
+
+/* 
+
 
 @media screen and (max-width: 680px) {
   .base-tela {
@@ -177,7 +172,7 @@ body {
   .row-telas {
     gap: 15px;
   }
-}
+} */
 
 @media screen and (max-width: 700px) {
   .video-youtube {
