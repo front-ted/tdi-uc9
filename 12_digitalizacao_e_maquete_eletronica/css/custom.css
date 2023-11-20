@@ -19,19 +19,19 @@ body {
 .tela {
   background-image: url("../imgs/figura_tela.png");
   background-repeat: no-repeat;
-  background-size: auto;
-  width: 100%;
-  min-height: 600px;
-  padding-top: 200px;
+  background-size: 100%;
+  width: 80%;
+  height: 450px;
+  padding-top: 120px;
 }
 
 .row-telas {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  gap: 50px;
 }
 
 .btn-softwares {
@@ -97,6 +97,83 @@ body {
     background-image: none;
   }
 }
+
+@media screen and (max-width: 990px) {
+  .tela {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .tela {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .linha {
+    display: flex;
+    flex-direction: column;
+  }
+  .tela {
+    height: fit-content;
+  }
+}
+
+/* 
+
+
+@media screen and (max-width: 680px) {
+  .base-tela {
+    height: 500px;
+  }
+
+  .tela {
+    padding-top: 100px;
+  }
+  .btn-softwares {
+    background-size: 60%;
+    height: 80px;
+  }
+  .row-telas {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .base-tela {
+    height: 400px;
+  }
+
+  .tela {
+    padding-top: 70px;
+  }
+  .btn-softwares {
+    background-size: 50%;
+    height: 80px;
+  }
+  .row-telas {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .tela {
+    padding-top: 50px;
+  }
+
+  .tela button {
+    height: 70px;
+  }
+  .btn-softwares {
+    background-size: 50%;
+    height: 80px;
+  }
+  .row-telas {
+    gap: 15px;
+  }
+} */
+
 @media screen and (max-width: 700px) {
   .video-youtube {
     width: 320px;

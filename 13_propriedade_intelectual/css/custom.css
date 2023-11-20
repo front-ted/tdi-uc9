@@ -31,6 +31,10 @@ body {
   min-height: 850px;
 }
 
+.tam-img-modal-normal {
+  height: 237.67px;
+}
+
 .painel-botoes {
   position: relative;
 }
@@ -416,77 +420,56 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .bloco3 {
+    background-image: none;
+  }
+
+  .painel-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
   .botao-propriedade-industrial {
-    position: absolute;
-    left: 20px;
-    bottom: -500px;
+    position: relative;
+    left: unset;
+    bottom: unset;
   }
 
   .botao-patentes {
-    left: 30px;
-    top: 310px;
+    position: relative;
+    left: unset;
+    top: unset;
   }
 
   .botao-desenho-industrial {
-    left: 50px;
-    top: 200px;
+    position: relative;
+    left: unset;
+    top: unset;
   }
 
   .botao-registro-marca {
-    left: 200px;
-    top: 140px;
+    position: relative;
+    left: unset;
+    top: unset;
   }
 
   .botao-indicacoes-geograficas {
-    left: 250px;
-    top: 230px;
+    position: relative;
+    left: unset;
+    top: unset;
   }
 
   .botao-repressao-concorrencia-desleal {
-    left: 300px;
-    top: 350px;
+    position: relative;
+    left: unset;
+    top: unset;
   }
 
   .botao-segredo-industrial {
-    left: 230px;
-    top: 450px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .botao-propriedade-industrial {
-    position: absolute;
-    left: 5px;
-    bottom: -500px;
-  }
-
-  .botao-patentes {
-    left: 5px;
-    top: 310px;
-  }
-
-  .botao-desenho-industrial {
-    left: 10px;
-    top: 200px;
-  }
-
-  .botao-registro-marca {
-    left: 170px;
-    top: 140px;
-  }
-
-  .botao-indicacoes-geograficas {
-    left: 220px;
-    top: 230px;
-  }
-
-  .botao-repressao-concorrencia-desleal {
-    left: 250px;
-    top: 350px;
-  }
-
-  .botao-segredo-industrial {
-    left: 220px;
-    top: 450px;
+    position: relative;
+    left: unset;
+    top: unset;
   }
 }
