@@ -6,18 +6,437 @@
   margin-top: 100px;
 }
 
+body {
+  background-image: url("../imgs/elemento1.png"), url("../imgs/elemento2.png"),
+    url("../imgs/elemento3.png"), url("../imgs/elemento4.png"),
+    url("../imgs/bg_white.jpg");
+  background-position: right 40%, right 230%, left 500%, right 340%, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+  background-size: 14%, 14%, 14%, 14%, cover;
+}
+
+.bloco2 {
+  background-image: url("../imgs/elemento5.png"), url("../imgs/elemento6.png"),
+    url("../imgs/bg_green.jpg");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-position: left center, right bottom, center;
+  background-size: 14%, 14%, auto;
+  color: white;
+}
+
+.bloco2 h3,
+h4 {
+  color: white;
+}
+
+.divFig1 {
+  margin-top: 23.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+}
+
+.fig1 {
+  flex: 1;
+}
+
+.tab1 {
+  background-image: url("../imgs/tab1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 20%, center;
+  height: 1200px;
+  position: relative;
+  display: flex;
+}
+
+.btns {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 156px;
+  height: 156px;
+  position: absolute;
+}
+
+.btn-consulta-detalhada {
+  background-image: url("../imgs/tab1_1.png");
+  top: 9%;
+  left: 42%;
+}
+
+.btn-design-e-desenvolvimento {
+  background-image: url("../imgs/tab1_2.png");
+  top: 29%;
+  left: 5%;
+}
+
+.selecao-dos-materiais {
+  background-image: url("../imgs/tab1_3.png");
+  top: 44%;
+  left: 25%;
+}
+
+.etapa-acabamento {
+  background-image: url("../imgs/tab1_4.png");
+  top: 1%;
+  left: 68%;
+}
+.conclusao-de-fabricacao {
+  background-image: url("../imgs/tab1_5.png");
+  top: 28%;
+  left: 60%;
+}
+
+.inspecao-de-qualidade {
+  background-image: url("../imgs/tab1_6.png");
+  top: 63%;
+  left: 55%;
+}
+
+.assistencia-pos-venda {
+  background-image: url("../imgs/tab1_7.png");
+  top: 78%;
+  left: 44%;
+}
+
+.modal-tabuleiro {
+  background-color: #e74c3c;
+}
+
+.modal-tabuleiro h4 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.modal-tabuleiro span {
+  color: white;
+  font-size: 1.5em;
+  text-shadow: none;
+}
+
+.panel-heading {
+  background-color: #d64c3c !important;
+  border: 2px solid #d64c3c !important;
+  color: white !important;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.panel-heading a {
+  text-decoration: none;
+}
+
+.panel-heading a:hover {
+  text-decoration: none;
+}
+
+.panel-body {
+  background-color: transparent;
+  color: black;
+  border: none;
+  box-shadow: none;
+}
+
+#materiaisConstrutivosAccordion .panel-body {
+  background-color: transparent;
+}
+
+.panel-expanded .panel-title {
+  color: black;
+  text-decoration: none;
+  transform: transition 0.2s;
+}
+
+.panel-expanded {
+  background-color: white !important;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.infografico {
+  width: 50%;
+  height: 1200px;
+  background-color: #cacaca;
+  border-radius: 0px 100px 100px 0px;
+}
+span {
+  display: block;
+}
+
+#infografico {
+  margin-top: 50px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+#infografico .row {
+  width: 140%;
+  display: flex;
+  align-items: center;
+}
+
+.infografico-texto {
+  padding-top: 8%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.infografico-imagem {
+  margin: 0;
+  padding: 0px;
+}
+
+.row1 {
+  margin: -50px 0px 0px -150px;
+}
+
+.imagem-a-direita {
+  margin: -20px -100px 0px 0px;
+}
+
+.imagem-a-esquerda {
+  margin: -20px 0px 0px -150px;
+}
+
+.infografico-texto-esquerda {
+  text-align: right;
+}
+
+.tab2 {
+  background-image: url("../imgs/tab2.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 1%;
+  height: 1300px;
+  position: relative;
+}
+
+.btn-consulta-ao-cliente {
+  background-image: url("../imgs/tab2_1.png");
+  top: 10%;
+  left: 10%;
+}
+
+.btn-desenvolviment-projeto {
+  background-image: url("../imgs/tab2_2.png");
+  top: 30%;
+  left: 13%;
+}
+
+.btn-estimativa-de-custos {
+  background-image: url("../imgs/tab2_3.png");
+  top: 60%;
+  left: 30%;
+}
+
+.btn-etapa-de-fabricacao {
+  background-image: url("../imgs/tab2_4.png");
+  top: 80%;
+  left: 15%;
+}
+
+.btn-etapa-de-acabamento {
+  background-image: url("../imgs/tab2_5.png");
+  top: 30%;
+  left: 50%;
+}
+
+.btn-inspecao-de-qualidade {
+  background-image: url("../imgs/tab2_6.png");
+  top: 8%;
+  left: 57%;
+}
+
+.btn-apoio-apos-a-venda {
+  background-image: url("../imgs/tab2_7.png");
+  top: 60%;
+  left: 70%;
+}
+
+.panel {
+  background-color: transparent;
+  border: none;
+}
+
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border-top: none;
+}
+
+.accordion1-body p {
+  color: white;
+}
+
+.modal-body {
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-image: none, none, none, none, url("../imgs/bg_white.jpg");
+  }
+
+  .bloco2 {
+    background-image: none, none, url("../imgs/bg_green.jpg");
+  }
+
+  .infografico {
+    height: 500px;
+    width: 40%;
+  }
+  .row1 {
+    margin: -50px 0px 0px -100px;
+  }
+
+  .imagem-a-direita {
+    margin: -20px 0px 0px -50px;
+  }
+
+  .imagem-a-esquerda {
+    margin: -20px 0px 0px -100px;
+  }
+}
 @media screen and (max-width: 700px) {
-  .video-youtube {
-    width: 320px;
-    height: 180px;
-    border-radius: 10px;
+  .infografico {
+    height: 500px;
+    width: 70%;
+  }
+  .tab1 {
+    height: 800px;
+  }
+  .tab2 {
+    height: 800px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .video-youtube {
-    width: 320px;
-    height: 180px;
-    border-radius: 10px;
+  .tab1 {
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+  }
+
+  .btns {
+    position: relative;
+  }
+
+  .btn-consulta-detalhada {
+    background-image: url("../imgs/tab1_1.png");
+    top: unset;
+    left: unset;
+  }
+
+  .btn-design-e-desenvolvimento {
+    background-image: url("../imgs/tab1_2.png");
+    top: unset;
+    left: unset;
+  }
+
+  .selecao-dos-materiais {
+    background-image: url("../imgs/tab1_3.png");
+    top: unset;
+    left: unset;
+  }
+
+  .etapa-acabamento {
+    background-image: url("../imgs/tab1_4.png");
+    top: unset;
+    left: unset;
+  }
+  .conclusao-de-fabricacao {
+    background-image: url("../imgs/tab1_5.png");
+    top: unset;
+    left: unset;
+  }
+
+  .inspecao-de-qualidade {
+    background-image: url("../imgs/tab1_6.png");
+    top: unset;
+    left: unset;
+  }
+
+  .assistencia-pos-venda {
+    background-image: url("../imgs/tab1_7.png");
+    top: unset;
+    left: unset;
+  }
+
+  .tab2 {
+    flex-direction: column;
+    align-items: center;
+
+    background-image: none;
+    padding: 0 50px 0 50px;
+    height: 1200px;
+  }
+
+  .btn-consulta-ao-cliente {
+    top: unset;
+    left: unset;
+  }
+
+  .btn-desenvolviment-projeto {
+    top: unset;
+    left: unset;
+  }
+
+  .btn-estimativa-de-custos {
+    top: unset;
+    left: unset;
+  }
+
+  .btn-etapa-de-fabricacao {
+    top: unset;
+    left: unset;
+  }
+
+  .btn-etapa-de-acabamento {
+    top: unset;
+    left: unset;
+  }
+
+  .btn-inspecao-de-qualidade {
+    top: unset;
+    left: unset;
+  }
+
+  .btn-apoio-apos-a-venda {
+    top: unset;
+    left: unset;
+  }
+
+  .infografico {
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: transparent;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .imagem-a-direita {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .imagem-a-esquerda {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    margin: 0px;
   }
 }
