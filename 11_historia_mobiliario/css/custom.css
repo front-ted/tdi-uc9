@@ -4,7 +4,91 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+h2, h3, h4, h5{color: #000;}
+.bg-relogio{
+    background: url('../imgs/ilustra_esquerda.png') no-repeat left top 150px / 20%;
+    background-attachment: fixed;
+}
 .bloco1{
-    background: url('../imgs/ilustra_esquerda.png') no-repeat left top / 15%;
-    height: 100vh;
+    background: url('../imgs/ilustra_direita.png') no-repeat right 30px bottom / 10%;
+    min-height: 80vh;
+}
+.bloco2{
+    background: url('../imgs/ilustra_direita2.png') no-repeat right 30px bottom / 10%;
+}
+.flex-inicial{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 58%;
+    margin: 0 auto;
+}
+.flex-inicial div:first-child{margin-right: 20px;}
+.pergaminho{
+    background: url('../imgs/pergaminho.png') no-repeat center top;
+    max-width: 925px;
+    min-height: 1042px;
+    padding: 125px 255px;
+    margin-top: 100px;
+}
+.pergaminho p{
+    font-size: 16px;
+    line-height: 20px;
+}
+.bloco3{
+    background: url('../imgs/ilustra_relogio.png') no-repeat left 30px top / 10%;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+.painel1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.painel1 button{
+    width: 325px;
+    height: 287px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    transition: all .4s;
+    border: none;
+    background-color: transparent;
+    margin: 20px 0;
+}
+.bt-antiga{background-image: url('../imgs/bt_antiga.png');}
+.bt-media{background-image: url('../imgs/bt_media.png');}
+.bt-moderna{background-image: url('../imgs/bt_moderna.png');}
+.bt-contemporanea{background-image: url('../imgs/bt_contemporanea.png');}
+
+.bt-antiga:hover{background-image: url('../imgs/bt_antiga_hv.png');}
+.bt-media:hover{background-image: url('../imgs/bt_media_hv.png');}
+.bt-moderna:hover{background-image: url('../imgs/bt_moderna_hv.png');}
+.bt-contemporanea:hover{background-image: url('../imgs/bt_contemporanea_hv.png');}
+
+.bt-transcricao{
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+    margin-top: 0;
+}
+.esquemaDaBru .btn{font-size: 15px;}
+.esquemaDaBru .enunciado{color: #000;}
+
+.modal-body{
+    background: url('../imgs/bg.png') repeat-y;
+}
+table, table th{text-align: center;}
+
+@media screen and (max-width: 980px){
+    .bg-relogio{
+        background: url('../imgs/ilustra_esquerda.png') no-repeat left top 100px / 15%;
+        background-attachment: unset;
+    }
+    .pergaminho{
+        background: none;
+        padding: 100px 50px;
+        min-height: auto;
+    }
+    .bloco3{background: none;}
 }
