@@ -212,7 +212,7 @@ h5 {
     page-break-inside: avoid;
   }
   h2, h3, h4 {
-    page-break-inside: avoid;
+    /* page-break-inside: avoid; */
   }
   .panel {
     page-break-inside: avoid;
@@ -438,7 +438,7 @@ h5 {
     padding: 0px !important;
   }
   .modal {
-    page-break-inside: avoid;
+    page-break-before: avoid;
   }
   .modal.fade .modal-dialog {
      -webkit-transform: unset !important;
