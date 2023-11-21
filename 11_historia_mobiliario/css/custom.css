@@ -1,1 +1,10 @@
 header{margin-top: 100px;}
+body{
+    background: url('../imgs/bg.png') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bloco1{
+    background: url('../imgs/ilustra_esquerda.png') no-repeat left top / 15%;
+    height: 100vh;
+}
