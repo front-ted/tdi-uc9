@@ -1,67 +1,96 @@
-body, .modal-100 .modal-body{
-  background: url('../imgs/bg_texture.jpg') repeat;
+body,
+.modal-100 .modal-body {
+  background: url("../imgs/bg_texture.jpg") repeat;
   background-attachment: fixed;
 }
-header{margin-top: 100px;}
-.bloco.branco h2, .bloco.branco h3, .bloco.branco h4{
+header {
+  margin-top: 100px;
+}
+.bloco.branco h2,
+.bloco.branco h3,
+.bloco.branco h4 {
   color: #000;
 }
-.bloco{
+.bloco {
   padding: 60px 0;
 }
-.bloco.verde{
+.bloco.verde {
   background-color: #1b4949;
 }
-.bloco.verde *{color: #fff;}
-.moldura-imgs{
+.bloco.verde * {
+  color: #fff;
+}
+.moldura-imgs {
   border-radius: 40px;
 }
-.modal-body .btn{
+.modal-body .btn {
   float: right;
   border: 3px solid #2a8080;
   color: #2a8080;
 }
-.painel{
+.painel {
   display: flex;
   width: 470px;
   flex-wrap: wrap;
   margin: 40px auto;
   justify-content: space-between;
 }
-.painel button{
+.painel button {
   width: 205px;
   height: 235px;
   border: none;
-  transition: all .4s;
+  transition: all 0.4s;
   margin-bottom: 20px;
   color: #000;
   padding-top: 45%;
 }
-.bt-tracos{background: url('../imgs/bt1.png') no-repeat top center;}
-.bt-tracos:hover{background: url('../imgs/bt1_hover.png') no-repeat top center;}
-.bt-simbologia{background: url('../imgs/bt2.png') no-repeat top center;}
-.bt-simbologia:hover{background: url('../imgs/bt2_hover.png') no-repeat top center;}
-.bt-escala{background: url('../imgs/bt3.png') no-repeat top center;}
-.bt-escala:hover{background: url('../imgs/bt3_hover.png') no-repeat top center;}
-.bt-cotas{background: url('../imgs/bt4.png') no-repeat top center;}
-.bt-cotas:hover{background: url('../imgs/bt4_hover.png') no-repeat top center;}
+.bt-tracos {
+  background: url("../imgs/bt1.png") no-repeat top center;
+}
+.bt-tracos:hover {
+  background: url("../imgs/bt1_hover.png") no-repeat top center;
+}
+.bt-simbologia {
+  background: url("../imgs/bt2.png") no-repeat top center;
+}
+.bt-simbologia:hover {
+  background: url("../imgs/bt2_hover.png") no-repeat top center;
+}
+.bt-escala {
+  background: url("../imgs/bt3.png") no-repeat top center;
+}
+.bt-escala:hover {
+  background: url("../imgs/bt3_hover.png") no-repeat top center;
+}
+.bt-cotas {
+  background: url("../imgs/bt4.png") no-repeat top center;
+}
+.bt-cotas:hover {
+  background: url("../imgs/bt4_hover.png") no-repeat top center;
+}
 
-.bloco.verde.um{
-  background-image: url('../imgs/elementos1.png');
+.bloco.verde.um {
+  background-image: url("../imgs/elementos1.png");
   background-repeat: no-repeat;
   background-position: left 20px bottom 10%;
   background-size: 10%;
 }
-.bloco.verde.dois{
-  background-image: url('../imgs/elementos2.png');
+.bloco.verde.dois {
+  background-image: url("../imgs/elementos2.png");
   background-repeat: no-repeat;
   background-position: right 20px bottom 10%;
   background-size: 10%;
 }
 
+.senac.center td {
+  text-align: center !important;
+}
 
 @media screen and (max-width: 1200px) {
-  .bloco.verde.um, .bloco.verde.dois{background-image: none;}
+  .bloco.verde.um,
+  .bloco.verde.dois {
+    background-image: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
