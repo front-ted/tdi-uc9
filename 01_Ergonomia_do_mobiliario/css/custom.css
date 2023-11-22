@@ -2,6 +2,46 @@
   margin-top: 100px;
 }
 
+.espera-objeto {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  padding-left: 50px;
+}
+
+.espera-objeto h1 {
+  color: aliceblue;
+}
+
+body {
+  background-color: #358080;
+  background-image: url("../imgs/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 10%, right top, right center;
+}
+
+.pagina {
+  background-image: url("../imgs/elemento1.png"), url("../imgs/elemento02.png");
+  background-repeat: no-repeat;
+  background-position: top right, right center;
+}
+
+body h2,
+h3,
+h4,
+p {
+  color: white;
+}
+
+@media screen and (max-width: 1300px) {
+  .pagina {
+    background-image: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
 }
 
