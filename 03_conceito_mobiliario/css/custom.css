@@ -6,6 +6,10 @@ body{
 h2{color: #2a8080;}
 header{margin-top: 50px;}
 .bloco{padding: 100px 0;}
+.bloco:first-child{padding-top: 0;}
+.grupo-imprimir{
+  margin-top: 45px;
+}
 .bloco1{
   background: 
   url('../imgs/bg_01esq.png') no-repeat left 20px top 20% / 6%,
