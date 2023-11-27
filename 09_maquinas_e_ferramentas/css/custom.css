@@ -145,6 +145,9 @@ body {
   /* #booklet > section > div.pagina > div > div.principal > .botoes .modal-dialog{
     max-width: 94% !important;
   } */
+  .modal-100{
+    overflow: scroll;
+  }
   #furadeiraManualEletricaModal > div
   .img-grupos-ferramentas{
     max-width: 80%;
