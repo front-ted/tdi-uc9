@@ -142,6 +142,37 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  /* #booklet > section > div.pagina > div > div.principal > .botoes .modal-dialog{
+    max-width: 94% !important;
+  } */
+  #furadeiraManualEletricaModal > div
+  .img-grupos-ferramentas{
+    max-width: 80%;
+  }
+  .btn-ferramentas{
+    max-width: 93%;
+  }
+  #perfuracaoModal > div > div > div.modal-body.bg-modal{
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+
+  }
+  #perfuracaoModal > div > div > div.modal-body.bg-modal > div{
+    padding: 0 !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+  
+  .botoes .btn-principais{
+    max-width: 100%;
+  }
+  .btn-principais div{
+    max-width: 100%;
+
+  }
   .video-youtube {
     width: 320px;
     height: 180px;
