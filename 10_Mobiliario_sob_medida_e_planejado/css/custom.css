@@ -376,6 +376,15 @@ span {
     background-image: none;
   }
 
+  table {
+    max-width: 95%;
+  }
+
+  .tab2 {
+    display: flex;
+    gap: 25px;
+  }
+
   .btns {
     position: relative;
   }
