@@ -1,5 +1,7 @@
 body {
   background-image: url("../imgs/bg.png");
+  
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../imgs/bg.png"); 
 }
 
 .corpo {
@@ -21,8 +23,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 80%;
-  height: 450px;
+  height: 550px;
   padding-top: 120px;
+  margin: 0 auto;
 }
 
 .row-telas {
@@ -32,6 +35,11 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.row-telas button{
+  transform: scale(1.2);
+    margin: 15px;
 }
 
 .btn-softwares {
@@ -100,7 +108,8 @@ body {
 
 @media screen and (max-width: 990px) {
   .tela {
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    width: 100%;
   }
 }
 
