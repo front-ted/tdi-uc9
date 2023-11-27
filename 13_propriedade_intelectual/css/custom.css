@@ -147,8 +147,6 @@ body {
 .accordion-patentes {
   background-color: transparent !important;
   border: none !important;
-  background-image: url("../imgs/00.png");
-  background-repeat: no-repeat;
   background-position: 72% center;
 }
 
