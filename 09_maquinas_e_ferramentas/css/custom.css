@@ -149,9 +149,9 @@ body {
   .img-grupos-ferramentas{
     max-width: 80%;
   }
-  .btn-ferramentas{
+  /* .btn-ferramentas{
     max-width: 93%;
-  }
+  } */
   #perfuracaoModal > div > div > div.modal-body.bg-modal{
     padding: 0 !important;
     margin: 0 !important;
