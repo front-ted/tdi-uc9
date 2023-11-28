@@ -133,3 +133,29 @@ h2, h3, h4{color: #000;}
     .bloco2, .bloco4, .bloco8{background: none;}
     .bloco5, .bloco7, .bloco9{background: #1b4949;}
 }
+@media screen and (max-width: 780px){
+    .texto-inicial{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .desvantagens, .vantagens{
+        padding: 20px 20px;
+        margin: 30px auto;
+        margin-bottom: 30px;
+        padding-left: 75px;
+    }
+    .desvantagens{
+        padding-left: 40px;
+        padding-right: 75px;
+    }
+    .desvantagens::after{
+        background-size: 100%;
+        width: 65px;
+        right: 0;
+    }
+    .vantagens::after{
+        background-size: 100%;
+        width: 65px;
+        left: 0;
+    }
+}
