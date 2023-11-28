@@ -1,4 +1,10 @@
-*{font-family: roboto;}
-p{
+* {
+  font-family: roboto;
+}
+p {
   word-wrap: break-word;
+}
+
+.quebra-linha {
+  display: inline-block;
 }
