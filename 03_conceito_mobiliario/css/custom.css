@@ -193,6 +193,12 @@ header {
 .bloco.verde .panel {
   border: none;
 }
+.centralizar-imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1240px) {
   #modal-residencial .modal-body {
@@ -204,6 +210,11 @@ header {
   }
   #modal-comercial .modal-body {
     background: none, none, url("../imgs/bg_modais.png") repeat;
+  }
+
+  .bloco1,
+  .bloco3 {
+    background: none;
   }
 }
 
