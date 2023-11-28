@@ -693,108 +693,75 @@ ul li {
   }
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 700px) {
   .caixa-ferramentas {
-    height: 500px;
+    background-image: none;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
-
   .btn-pregos {
-    top: 42%;
-    left: 9%;
-    scale: 0.35;
-  }
-
-  .btn-pregos-visitado {
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 
   .btn-grampos {
-    left: 8%;
-    top: 38%;
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
-
-  .btn-grampos-visitado {
-    scale: 0.35;
-  }
-
   .btn-rebites {
-    top: 65%;
-    left: 3%;
-    scale: 0.35;
-  }
-
-  .btn-rebites-visitado {
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 
   .btn-dobradicas {
-    top: 33%;
-    left: 22%;
-    scale: 0.35;
-  }
-
-  .btn-dobradicas-visto {
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 
   .btn-parafusos {
-    top: 54%;
-    left: 22%;
-
-    scale: 0.35;
-  }
-
-  .btn-parafusos-visto {
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 
   .btn-corredicas {
-    left: 32%;
-    top: 38%;
-    scale: 0.35;
-  }
-
-  .btn-corredicas-visto {
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 
   .btn-puxadores {
-    top: 41%;
-    left: 38%;
-    scale: 0.35;
-  }
-
-  .btn-puxadores-visto {
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 
   .btn-pistoes {
-    top: 35%;
-    left: 60%;
-    scale: 0.35;
-  }
-
-  .btn-pistoes-visto {
-    scale: 0.35;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 
   .btn-trilhos {
-    top: 25%;
-    left: 66%;
-    scale: 0.35;
-  }
-
-  .btn-trilhos-visto {
-    scale: 0.3;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .video-youtube {
-    width: 320px;
-    height: 180px;
-    border-radius: 10px;
+    position: relative;
+    top: unset;
+    left: unset;
+    scale: 0.6;
   }
 }
 

@@ -26,7 +26,7 @@ body {
   background-size: cover;
   width: 365px;
   height: 268px;
-  
+
   background-size: 100% 100%;
 }
 
@@ -41,7 +41,7 @@ body {
   background-size: cover;
   width: 365px;
   height: 268px;
-  
+
   background-size: 100% 100%;
 }
 
@@ -56,7 +56,7 @@ body {
   background-size: cover;
   width: 365px;
   height: 268px;
-  
+
   background-size: 100% 100%;
 }
 
@@ -71,14 +71,14 @@ body {
   background-size: cover;
   width: 365px;
   height: 268px;
-  
+
   background-size: 100% 100%;
 }
 
 .btn-equipamentos:hover {
   background-image: url("../imgs/bt04_b.png");
   background-size: cover;
-  
+
   background-size: 100% 100%;
 }
 
@@ -120,15 +120,18 @@ body {
 .encerramento h3 {
   color: white;
 }
-.botoes{
+.botoes {
   max-width: 758px;
   display: block;
   margin: 0 auto;
 }
 
+.video-player {
+  margin-bottom: 50px;
+}
 
 @media screen and (max-width: 991px) {
-  .botoes .btn-principais{
+  .botoes .btn-principais {
     display: block;
     margin: 0 auto;
   }
@@ -145,36 +148,33 @@ body {
   /* #booklet > section > div.pagina > div > div.principal > .botoes .modal-dialog{
     max-width: 94% !important;
   } */
-  .modal-100{
+  .modal-100 {
     overflow: scroll;
   }
-  #furadeiraManualEletricaModal > div
-  .img-grupos-ferramentas{
+  #furadeiraManualEletricaModal > div .img-grupos-ferramentas {
     max-width: 80%;
   }
   /* .btn-ferramentas{
     max-width: 93%;
   } */
-  #perfuracaoModal > div > div > div.modal-body.bg-modal{
+  #perfuracaoModal > div > div > div.modal-body.bg-modal {
     padding: 0 !important;
     margin: 0 !important;
     max-width: 100%;
     margin: 20px;
     padding: 20px;
-
   }
-  #perfuracaoModal > div > div > div.modal-body.bg-modal > div{
+  #perfuracaoModal > div > div > div.modal-body.bg-modal > div {
     padding: 0 !important;
     margin: 0 !important;
     padding: 20px !important;
   }
-  
-  .botoes .btn-principais{
+
+  .botoes .btn-principais {
     max-width: 100%;
   }
-  .btn-principais div{
+  .btn-principais div {
     max-width: 100%;
-
   }
   .video-youtube {
     width: 320px;

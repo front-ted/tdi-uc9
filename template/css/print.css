@@ -8,26 +8,28 @@
 
 */
 /* ESTRUTURA PARA ELEMENTOS RELACIONADOS AOS BOTÕES E AJUDA DA IMPRESSÃO */
-#marcadaguaLogo { display: none !important; }
+#marcadaguaLogo {
+  display: none !important;
+}
 
 .grupo-imprimir {
-    display: block;
-    text-align: right;
+  display: block;
+  text-align: right;
 }
-.grupo-imprimir button.bto-imprimir, .grupo-imprimir button.bto-ajuda {
-    border: 0px none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-
-  }
-  .img-menor{
-    width: 10%;
-  }
-  .img-maior{
-    width: 230%;
-  }
+.grupo-imprimir button.bto-imprimir,
+.grupo-imprimir button.bto-ajuda {
+  border: 0px none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.img-menor {
+  width: 10%;
+}
+.img-maior {
+  width: 230%;
+}
 .grupo-imprimir button.bto-imprimir {
   /*border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;*/
@@ -37,7 +39,9 @@
   padding-left: 11.4px;
   padding-right: 11.4px;
 }
-.pull-right{max-width: 13%;}
+.pull-right {
+  max-width: 13%;
+}
 .bto-imprimir .bto-lettering {
   top: -2px;
   position: relative;
@@ -46,7 +50,7 @@
   font-size: 20px;
   margin-right: 3px;
 }
-.grupo-imprimir button.bto-ajuda  {
+.grupo-imprimir button.bto-ajuda {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   float: right;
@@ -57,63 +61,59 @@
   padding-right: 11.4px;
 }
 
-
 .grupo-imprimir button.bto-ajuda span.fa.fa-comment {
-    font-size: 25px;
+  font-size: 25px;
 }
 .grupo-imprimir button.bto-ajuda span.fa.fa-question {
-    position: absolute;
-    top: 14px;
-    left: 20px;
-    font-size: 14px;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 14px;
 }
 
-
-
 .pdfobs {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    padding: 20px;
-    overflow: auto;
-    z-index: 99999;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 20px;
+  overflow: auto;
+  z-index: 99999;
 }
 .pdfobs a {
   text-decoration: underline;
   font-weight: 700;
 }
 .pdfobs .container {
-    max-width: 640px;
+  max-width: 640px;
 }
 .destaquePDFobs {
-
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 370px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn.btn-link.closePDFobs {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
 }
 
-.legenda-imagem{
+.legenda-imagem {
   font-size: 12px !important;
   text-align: center !important;
 }
 
-p.legenda-imagem{
+p.legenda-imagem {
   text-align: center;
   text-align-last: unset;
 }
-.imginfo{
+.imginfo {
   margin-top: 25px;
   float: right;
 }
@@ -126,32 +126,35 @@ p.legenda-imagem{
 /*------------------------------*/
 
 /* CLASSE PARA EXIBIR ELEMENTO APENAS NA IMPRESSÃO */
-.only-print, .apenas-print, .apenas-imprimir {
+.only-print,
+.apenas-print,
+.apenas-imprimir {
   display: none;
 }
 /* FIM-/CLASSE PARA EXIBIR ELEMENTO APENAS NA IMPRESSÃO */
 
-
-@media print { /* INICIALIZA A MEDIA QUERY PRINT */
+@media print {
+  /* INICIALIZA A MEDIA QUERY PRINT */
   /* CONFIGURAÇÃO DO DOCUMENTO */
-  html, body {
+  html,
+  body {
     height: 100%;
     padding-left: unset;
     padding-right: unset;
   }
 
-
   header {
     display: none;
   }
-  .panel-body p, .caixa-destaque p {
+  .panel-body p,
+  .caixa-destaque p {
     text-indent: unset;
   }
 
-   .fundo-tecnicos {
-     position: relative;
-     z-index: 2;
-   }
+  .fundo-tecnicos {
+    position: relative;
+    z-index: 2;
+  }
   @page {
     size: A4;
     margin-top: 3cm;
@@ -161,57 +164,59 @@ p.legenda-imagem{
   }
 
   #marcadaguaLogo {
-      display: block !important;
-      position: fixed;
-      top: 1cm;
-      left: 0px;
-      width: auto;
-      height:auto;
-      opacity: 0.07;
-      z-index: 1;
-   }
-/* FIM-/CONFIGURAÇÃO DO DOCUMENTO */
+    display: block !important;
+    position: fixed;
+    top: 1cm;
+    left: 0px;
+    width: auto;
+    height: auto;
+    opacity: 0.07;
+    z-index: 1;
+  }
+  /* FIM-/CONFIGURAÇÃO DO DOCUMENTO */
 
-/*------------------------------*/
+  /*------------------------------*/
 
-/* OVERHIDE DAS TAGS DO TEMPLATE E BOOTSTRAP */
+  /* OVERHIDE DAS TAGS DO TEMPLATE E BOOTSTRAP */
 
-  .collapse, .panel-collapse.collapse {
+  .collapse,
+  .panel-collapse.collapse {
     display: block !important;
     height: unset !important;
-}
-h1 {
-      border-bottom: 1px solid #e6e6e6;
-      padding-bottom: 10px;
-      font-size: 25pt;
-}
-.pagina {
-  border-top: none;
-  margin-top: 10px;
-  page-break-after: always;
-  padding: 0px;
-}
+  }
+  h1 {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+    font-size: 25pt;
+  }
+  .pagina {
+    border-top: none;
+    margin-top: 10px;
+    page-break-after: always;
+    padding: 0px;
+  }
 
-
-h2 {
-  font-size: 22pt;
-}
-h3 {
-  font-size: 20pt;
-}
-h4 {
-  font-size: 18pt;
-  margin-bottom: 10px !important;
-}
-h5 {
-  font-size: 16pt;
-}
+  h2 {
+    font-size: 22pt;
+  }
+  h3 {
+    font-size: 20pt;
+  }
+  h4 {
+    font-size: 18pt;
+    margin-bottom: 10px !important;
+  }
+  h5 {
+    font-size: 16pt;
+  }
   h1 {
     /*page-break-before: always;*/
 
     page-break-inside: avoid;
   }
-  h2, h3, h4 {
+  h2,
+  h3,
+  h4 {
     /* page-break-inside: avoid; */
   }
   .panel {
@@ -236,31 +241,35 @@ h5 {
   div:first-line,
   blockquote:first-line,
   li:first-line {
-      background: transparent !important;
-      color: #000 !important;
-      box-shadow: none !important;
-      text-shadow: none !important;
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
-
 
   .fundo-tecnicos[data-titulo]::before {
-      content: attr(data-titulo);
-      font-size: 12pt;
+    content: attr(data-titulo);
+    font-size: 12pt;
   }
-  img{width: 50%;}
-  img, .equacoes, figure, .print-proteger {
-	  page-break-inside: avoid;
+  img {
+    width: 50%;
+  }
+  img,
+  .equacoes,
+  figure,
+  .print-proteger {
+    page-break-inside: avoid;
   }
   a[href]:after {
     content: " (" attr(href) ")";
   }
-  a[data-toggle='collapse']:after {
+  a[data-toggle="collapse"]:after {
     content: "";
   }
   .fundo-tecnicos {
     background: none;
     background-position: 0;
-    padding-left:0;
+    padding-left: 0;
     padding-bottom: 1em;
     border-radius: 0;
     margin-bottom: 0;
@@ -287,7 +296,20 @@ h5 {
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-  .carousel-indicators, .carousel-control, .btn-group, .nav-tabs, .nav-pills, .dropdown-menu, nav .pagination, nav .pager, .progress, .navbar, iframe, .embed-responsive, .modal-footer, .pagination  {
+  .carousel-indicators,
+  .carousel-control,
+  .btn-group,
+  .nav-tabs,
+  .nav-pills,
+  .dropdown-menu,
+  nav .pagination,
+  nav .pager,
+  .progress,
+  .navbar,
+  iframe,
+  .embed-responsive,
+  .modal-footer,
+  .pagination {
     display: none;
   }
 
@@ -305,10 +327,13 @@ h5 {
     border-radius: 0px;
     background: none;
   }
-  .tab-content .tab-pane, .tab-content .tab-pane ul, .tab-content > .tab-pane, .tab-content > .tab-pane.fade {
+  .tab-content .tab-pane,
+  .tab-content .tab-pane ul,
+  .tab-content > .tab-pane,
+  .tab-content > .tab-pane.fade {
     display: block !important;
   }
-  .tab-content .tab-pane ul li{
+  .tab-content .tab-pane ul li {
     display: list-item;
   }
 
@@ -329,7 +354,7 @@ h5 {
   }
 
   .carousel-inner .item.active.left {
-    transform: translate3d(0,0,0) !important;
+    transform: translate3d(0, 0, 0) !important;
   }
   .carousel-caption {
     position: absolute;
@@ -341,7 +366,7 @@ h5 {
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     color: #000;
     text-shadow: unset;
   }
@@ -394,7 +419,6 @@ h5 {
     transform: unset;
     max-width: 650px;
     background-color: none;
-
   }
   .fundo-tecnicos * > header {
     display: block;
@@ -408,9 +432,9 @@ h5 {
   h1.cor-padrao-curso-texto {
     max-width: unset;
     width: 100%;
-
   }
-  h1::before, h2::before {
+  h1::before,
+  h2::before {
     width: 0px !important;
     height: 0px !important;
   }
@@ -420,7 +444,9 @@ h5 {
     right: unset;
     bottom: unset;
   }
-  .modal, .modal.fade, .modal-body {
+  .modal,
+  .modal.fade,
+  .modal-body {
     height: auto;
     max-height: unset;
   }
@@ -433,7 +459,8 @@ h5 {
     max-height: unset !important;
     padding-top: unset !important;
   }
-  .caixa-aling-right, .caixa-aling-left {
+  .caixa-aling-right,
+  .caixa-aling-left {
     margin: 0px !important;
     padding: 0px !important;
   }
@@ -441,76 +468,86 @@ h5 {
     page-break-before: avoid;
   }
   .modal.fade .modal-dialog {
-     -webkit-transform: unset !important;
-    -ms-transform:unset !important;
+    -webkit-transform: unset !important;
+    -ms-transform: unset !important;
     -o-transform: unset !important;
-     transform: unset !important;
+    transform: unset !important;
     -webkit-transition: unset !important;
-    -moz-transition:unset !important;
+    -moz-transition: unset !important;
     -o-transition: -unset !important;
-     transition: unset !important
-   }
+    transition: unset !important;
+  }
   .close {
     display: none;
   }
   .break-inside-avoid {
-	  page-break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   div#booklet {
-      margin-left: unset;
-      margin-right: unset;
-      max-width: unset;
-      background-color: unset;
-      border: unset;
-      padding: unset;
-      margin-top: unset;
+    margin-left: unset;
+    margin-right: unset;
+    max-width: unset;
+    background-color: unset;
+    border: unset;
+    padding: unset;
+    margin-top: unset;
   }
- /* FIM-/OVERHIDE DAS TAGS DO TEMPLATE E BOOTSTRAP */
+  /* FIM-/OVERHIDE DAS TAGS DO TEMPLATE E BOOTSTRAP */
 
- /*-----------------------------*/
+  /*-----------------------------*/
 
- /* SUMIR COM TUDO QUE NÃO ESTEJA NA DIV .fundo-tecnicos */
- body > *:not(#booklet) {
+  /* SUMIR COM TUDO QUE NÃO ESTEJA NA DIV .fundo-tecnicos */
+  body > *:not(#booklet) {
     display: none;
   }
- /* FIM-/SUMIR COM TUDO QUE NÃO ESTEJA NA DIV .fundo-tecnicos */
+  /* FIM-/SUMIR COM TUDO QUE NÃO ESTEJA NA DIV .fundo-tecnicos */
 
- /* ------------------------------------- */
+  /* ------------------------------------- */
 
- /* TAGS .print e .no-print */
- .print, .only-print, .apenas-print, .imprimir, .apenas-imprimir {
+  /* TAGS .print e .no-print */
+  .print,
+  .only-print,
+  .apenas-print,
+  .imprimir,
+  .apenas-imprimir {
     display: block !important;
   }
-  .acessivel.print, .acessivel.imprimir {
+  .acessivel.print,
+  .acessivel.imprimir {
     width: unset;
     height: unset;
     padding: unset;
     margin: unset;
+    margin-bottom: 600px;
     border: unset;
     font-size: unset;
     overflow: unset;
   }
-  .no-print, .nao-imprimir {
+  .no-print,
+  .nao-imprimir {
     display: none !important;
   }
 
-  .quebrar-depois, .break-after {
+  .quebrar-depois,
+  .break-after {
     page-break-after: always;
   }
-  .quebrar-antes, .break-before {
+  .quebrar-antes,
+  .break-before {
     page-break-before: always;
   }
-  .evitar-quebra, .break-inside-avoid {
+  .evitar-quebra,
+  .break-inside-avoid {
     page-break-inside: avoid;
   }
-  .pull-right{
+  .pull-right {
     float: none !important;
     clear: both !important;
     display: block !important;
     width: 100px !important;
   }
- /* FIM-/TAGS .print e .no-print */
+  /* FIM-/TAGS .print e .no-print */
 
- /*------------------------------*/
+  /*------------------------------*/
 }
