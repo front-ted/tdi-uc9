@@ -51,6 +51,10 @@ h2, h3, h4{color: #000;}
   background-size: 100%;
   background-attachment: fixed;
 }
+#modal-sambladuras .container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .modal-100 .modal-body > *, .modal-100 .modal-body h4, .modal-100 .modal-body h3{color: #fff;}
 .panel-group h4 a, .panel-group p{color: #000;}
 .panel-body *{color: #000;}
