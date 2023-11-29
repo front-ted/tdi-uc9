@@ -526,7 +526,7 @@ p.legenda-imagem {
     height: unset;
     padding: unset;
     margin: unset;
-    margin-bottom: 600px;
+    /* margin-bottom: 600px; */
     border: unset;
     font-size: unset;
     overflow: unset;
