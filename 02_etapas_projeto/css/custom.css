@@ -237,6 +237,11 @@ html {
 .bloco4 .modal * {
   color: #ad362e;
 }
+
+.modal-dialog {
+  margin-top: 150px;
+}
+
 .ilustra {
   padding: 20px;
 }
