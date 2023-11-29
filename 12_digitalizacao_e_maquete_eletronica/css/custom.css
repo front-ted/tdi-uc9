@@ -1,7 +1,11 @@
 body {
   background-image: url("../imgs/bg.png");
-  
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../imgs/bg.png"); 
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../imgs/bg.png");
 }
 
 .corpo {
@@ -37,19 +41,19 @@ body {
   margin-bottom: 30px;
 }
 
-.row-telas button{
+.row-telas button {
   transform: scale(1.2);
-    margin: 15px;
+  margin: 15px;
 }
 
 .btn-softwares {
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: contain;
 
   border: none;
-  height: 117px;
-  width: 87px;
+  height: 100px;
+  width: 100px;
 }
 .linha {
   display: block;
