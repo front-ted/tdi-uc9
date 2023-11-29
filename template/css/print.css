@@ -136,6 +136,8 @@ p.legenda-imagem {
 @media print {
   /* INICIALIZA A MEDIA QUERY PRINT */
   /* CONFIGURAÇÃO DO DOCUMENTO */
+  .bloco1{min-height: auto !important;}
+  .flex-inicial{display: none !important;}
   html,
   body {
     height: 100%;
@@ -331,6 +333,7 @@ p.legenda-imagem {
     padding-left: 10px !important;
     margin-left: 10px !important;
   }
+  
   .tab-content .tab-pane,
   .tab-content .tab-pane ul,
   .tab-content > .tab-pane,
