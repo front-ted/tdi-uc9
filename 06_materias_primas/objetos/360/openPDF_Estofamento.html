@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open PDFs</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .button-container > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            padding: 0;
+            margin: 0 10px; /* Espaço entre os botões */
+        }
+
+        button img {
+            width: auto;
+            height: 30vh; /* Altura do botão ajustada para 30% da altura da página */
+        }
+
+        .button-text {
+            text-align: center;
+            margin-top: 10px; /* Espaço entre o botão e o texto */
+        }
+    </style>
+</head>
+<body onload="window.open('https://objetosgete.github.io/Build_Tour_360/PDFs/06_estofamento.pdf', '_self')">
+    <div class="button-container">
+		<div>
+            <a href="https://objetosgete.github.io/Build_Tour_360/PDFs/06_estofamento.pdf" target="_blank" style="border: 0px none; text-decoration: underline;">
+				<img src="https://objetosgete.github.io/Build_Tour_360/img/download.png" alt="Abre o PDF" style="max-width: 100%; height: auto;">
+			</a>
+			<p class="button-text">Se o download não começar, clique aqui para abrir/baixar o PDF.</p>
+        </div>
+    </div>
+</body>
+</html>
+

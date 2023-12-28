@@ -1,0 +1,62 @@
+using UnityEngine;
+
+public class OpenURL : MonoBehaviour
+{
+    public void OpenPDFMadeira()
+    {
+        Application.OpenURL("openPDF_Madeira.html");
+    }
+
+    public void OpenPDFChapaDura()
+    {
+        Application.OpenURL("openPDF_ChapaDura.html");
+    }
+
+    public void OpenPDFEstofamento()
+    {
+        Application.OpenURL("openPDF_Estofamento.html");
+    }
+
+    public void OpenPDFCompMadeira()
+    {
+        Application.OpenURL("openPDF_CompMadeira.html");
+    }
+
+    public void OpenPDFMarchetaria()
+    {
+        Application.OpenURL("openPDF_Marchetaria.html");
+    }
+
+    public void OpenPDFMetais()
+    {
+        Application.OpenURL("openPDF_Metais.html");
+    }
+
+    public void OpenPDFPedras()
+    {
+        print("Entrei em OpenPDFPedras");
+        Application.OpenURL("openPDF_Pedras.html");
+    }
+
+    public void OpenPDFPlasticos()
+    {
+        Application.OpenURL("openPDF_Plasticos.html");
+    }
+
+    public void OpenPDFTamburato()
+    {
+        Application.OpenURL("openPDF_Tamburato.html");
+    }
+
+    public void OpenPDFTecidos()
+    {
+        Application.OpenURL("openPDF_Tecidos.html");
+    }
+
+    public void OpenPDFVidros()
+    {
+        Application.OpenURL("openPDF_Vidros.html");
+    }
+
+
+}
