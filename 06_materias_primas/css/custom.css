@@ -13,16 +13,18 @@ header{margin-top: 100px;}
 }
 h2, h3, h4, h5{color: #000;}
 .bt-objeto{
-  background: url('../imgs/bt.png') no-repeat center center #fff;
-  width: 370px;
-  height: 230px;
+  background: url('../imgs/bt_objeto.png') no-repeat center center / 100% auto #fff;
+  width: 233px;
+  height: 191px;
   display: block;
   margin: 50px auto;
-  border-radius: 20px;
-  border: 15px solid #fff;
+  border-radius: 41px;
+  border: 5px solid #fff;
   transition: all .4s;
 }
-.bt-objeto:hover{transform: scale(1.1);}
+.bt-objeto:hover{transform: scale(1.1);
+background-image: url('../imgs/bt_objeto_hv.png');
+}
 
 @media screen and (max-width: 700px) {
   .video-youtube {
