@@ -1,4 +1,4 @@
-var uc = "TDI09" // aqui vai a sigla do curso e o numero da uc
+
 
 $(document).ready(function(){
 
@@ -6,12 +6,24 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop:0}, 'slow'); //slow, medium, fast
 	})
 
+
+	
+	// Verifica e completa todos os cards nos lugares certos
+	//
 	$("li[data-item]").each(function(){
-		var data = $(this).data('item');
+		
+		// Inserindo o código da UC na frente de todos os links. Isso garante que nunca vá haver 2 iguais
+		//
+		var data = uc + "_" + $(this).data('item');
+		$(this).attr("data-item", data);
+		//
+		// Atualizado a variavel data para garantir que também busque por itens que possuam o código da UC.
+		
+		//
 		var local =JSON.parse(localStorage.getItem(data))
 		if (local != null && local['uc'] == uc) {
 			var grupo = $("#"+ local['grupo'] + "").attr('data-index')
-		
+			console.log(uc, local)
 			if(grupo == 'lista-fazendo')	{
 				$("li[data-item='"+local['item']+"'").addClass('fazendo')
 				$("li[data-item='"+local['item']+"'] .dropdown-menu .mover-fazendo").hide()	
@@ -50,7 +62,8 @@ $(document).ready(function(){
 		}
 	});
 })
-
+// Interatividade com leitor de tela:
+//
 $('.mover-fazer').click(function(){
 	var item = $(this).parent().parent().parent().attr('data-item')
 	var aux = $(this).parent().parent().parent().parent().attr('id')
@@ -78,6 +91,7 @@ $('.mover-fazendo').click(function(){
 	var item = $(this).parent().parent().parent().attr('data-item')
 	var aux = $(this).parent().parent().parent().parent().attr('id')
 	var id = parseInt(aux) + 1 
+
 	if ($("#"+ id + "").attr('data-index') == "lista-fazendo"){
 		$(this).parent().parent().parent().addClass("fazendo")
 		$("li[data-item='"+item+"'").prependTo($("#"+ id + ""))
@@ -107,28 +121,41 @@ $('.mover-feito').click(function(){
 	verificaCompleto(grupo)
 
 })
+//
+// Fim da interatividade com leitor de tela.
 
+// Ao clicar, coloca o item no próximo card referente.
+//
 $('.link').click(function(){
+	
 	if ($(this).parent().parent().parent().attr("data-index") == "lista-fazer"){
 		var aux = $(this).parent().parent().parent().attr('id') 
 		var id = parseInt(aux) + 1 
+		
 		$(this).parent().parent().addClass('fazendo')
 		$(this).parent().parent().prependTo($("#"+ id + ""))
-		if (localStorage.getItem('verificaPrimeira')){
-			return
-		} else {
+		
+		if (localStorage.getItem(uc + '_verificaPrimeira') !== "nao_mais"){
+			//return <- pra que esse return? Ele é o responsável por não salvar quando clica.
+			
+		// } else {
 			$('.setinha').show();
 			$('.exemplo').show();
+		}else {
+			$('.setinha').hide();
+			$('.exemplo').hide();
 		}
 
 		var item = $(this).parent().parent().attr("data-item")
 		var salvarItem = {"grupo": id, "item": item, "uc": uc}
 	
-
+		
 		localStorage.setItem(item,JSON.stringify(salvarItem))
 		
 	
+
 	}
+	// console.log(salvarItem); 
 })
 
 var grupo = ""
@@ -195,10 +222,10 @@ dragula([
 			$("li[data-item='"+i+"'] .dropdown-menu li.mover-fazendo").hide()
 		}
 		if (lista == 'lista-feito') {
-			if (!localStorage.getItem('verificaPrimeira')){
+			if (localStorage.getItem(uc + '_verificaPrimeira')!== "nao_mais"){
 				$('.exemplo').hide()
 				$('.setinha').hide()
-				localStorage.setItem('verificaPrimeira', true)
+				localStorage.setItem(uc + '_verificaPrimeira', "nao_mais")
 			}
 			el.setAttribute('class', 'drag-item feito')
 			$("li[data-item='"+i+"'] .dropdown-menu li.mover-fazer").show()
