@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Open PDFs</title>
     <style>
@@ -22,7 +23,7 @@
             width: 100%;
         }
 
-        .button-container > div {
+        .button-container>div {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -33,30 +34,33 @@
             cursor: pointer;
             background-color: transparent;
             padding: 0;
-            margin: 0 10px; /* Espaço entre os botões */
+            margin: 0 10px;
+            /* Espaço entre os botões */
         }
 
         button img {
             width: auto;
-            height: 30vh; /* Altura do botão ajustada para 30% da altura da página */
+            height: 30vh;
+            /* Altura do botão ajustada para 30% da altura da página */
         }
 
         .button-text {
             text-align: center;
-            margin-top: 10px; /* Espaço entre o botão e o texto */
+            margin-top: 10px;
+            /* Espaço entre o botão e o texto */
         }
     </style>
 </head>
-<body onload="window.open('https://objetosgete.github.io/Build_Tour_360/PDFs/06_pedras.pdf', '_self')">
+
+<body onload="window.open('PDFs/06_pedras.pdf', '_self')">
     <div class="button-container">
-		<div>
-            <a href="https://objetosgete.github.io/Build_Tour_360/PDFs/06_pedras.pdf" target="_blank" style="border: 0px none; text-decoration: underline;">
-				<img src="https://objetosgete.github.io/Build_Tour_360/img/download.png" alt="Abre o PDF" style="max-width: 100%; height: auto;">
-			</a>
-			<p class="button-text">Se o download não começar, clique aqui para abrir/baixar o PDF.</p>
+        <div>
+            <a href="PDFs/06_pedras.pdf" target="_blank" style="border: 0px none; text-decoration: underline;">
+                <img src="img/download.png" alt="Abre o PDF" style="max-width: 100%; height: auto;">
+            </a>
+            <p class="button-text">Se o download não começar, clique aqui para abrir/baixar o PDF.</p>
         </div>
     </div>
 </body>
 
 </html>
-
