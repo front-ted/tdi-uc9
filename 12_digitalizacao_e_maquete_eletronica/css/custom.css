@@ -100,6 +100,10 @@ body {
   background-image: url("../imgs/icon_09.png");
 }
 
+.btn-archiCad {
+  background-image: url("../imgs/icon_10.png");
+}
+
 .bgModal {
   background-image: url("../imgs/botao_icon/bg.png");
 }
