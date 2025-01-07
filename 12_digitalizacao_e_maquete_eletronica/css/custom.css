@@ -43,14 +43,14 @@ body {
 
 .row-telas button {
   transform: scale(1.2);
-  margin: 15px;
+  margin: 18px;
 }
 
 .btn-softwares {
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
-
+  background-position: center;
   border: none;
   height: 100px;
   width: 100px;
@@ -102,11 +102,23 @@ body {
 
 .btn-archiCad {
   background-image: url("../imgs/icon_10.png");
+  background-size: 80%;
+  background-position: top center;
+}
+.btn-archiCad::after{
+  content: 'ArchiCAD';
+  position: absolute;
+  font-weight: bolder;
+  margin-left: -29px;
+  margin-top: 28px;
+  font-size: 15px;
 }
 
 .bgModal {
   background-image: url("../imgs/botao_icon/bg.png");
 }
+
+
 
 @media screen and (max-width: 1240px) {
   .pagina {
